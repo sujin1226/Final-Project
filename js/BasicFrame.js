@@ -14,16 +14,16 @@ let flag2 = false; // 토글 스위치 유저 드롭다운용
 // 사이드바 버튼 이벤트
 Btn.addEventListener('click',function(){
     if(flag==false){
-        Btn.style.left="0px";
-        common_sidebar.style.left="-200px";
+        Btn.style.left="200px";
+        common_sidebar.style.left="0px";
 
         transition(Btn);
         transition(common_sidebar);
         flag =!flag;
 
     }else if(flag==true){
-        Btn.style.left="200px";
-        common_sidebar.style.left="0px";
+        Btn.style.left="0px";
+        common_sidebar.style.left="-200px";
 
         transition(Btn);
         transition(common_sidebar);
@@ -54,3 +54,4 @@ TopBtn.addEventListener('click',function(){
 function transition(let){
     let.style.transition="1s";
 }
+

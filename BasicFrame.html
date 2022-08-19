@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/BasicFrame.css">
+    <!-- 틀 css -->
+    <link rel="stylesheet" href="./BasicFrame.css">
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- 아이콘 사이트 -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- 버튼 부트스트랩 사용 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>HotFix</title>
 </head>
 
@@ -15,7 +20,7 @@
     <!-- 헤더 -->
     <div class="common_header">
         <!-- 로고 -->
-        <div class="logo"><img src="/img/hotfix_logo.png" alt=""></div>
+        <div class="logo"><img src="image/hotfix_logo.png" alt=""></div>
         <!-- 검색창 -->
         <div class="search">
             <i class="uil uil-search"></i>
@@ -23,7 +28,7 @@
         </div>
         <!-- 마이페이지 -->
         <div class="user">
-            <img src="/img/user.png" alt="">
+            <img src="image/user.png" alt="">
         </div>
         <ul class="user_dropdown">
             <li>마이페이지</li>
@@ -36,17 +41,74 @@
     <!-- 작업 섹션 -->
     <div class="common_section">
         <!-- ============================ -->
+        <!-- 작업 섹션 공간 -->
+        <div class="teamlist">
+            <div class="teamsearch bar">
+                <ul class="searchleft">
+                    <li><input type="checkbox" name="" id=""> 전체</li>
+                    <li><input type="checkbox" name="" id="">개인</li>
+                    <li><input type="checkbox" name="" id="">팀</li>
+                </ul>
+                <ul class="searchright">
+                    <li>검색구분</li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">전체</option>
+                            <option value="">개인</option>
+                            <option value="">팀</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="내용을 입력해주세요">
+                        <button>검색</button>
+                    </li>
+                    <li>
+                        <select name="" id="">
+                            <option value="">상세검색</option>
+                            <option value="">언어</option>
+                            <option value="">지역</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+            <!-- paging처리할 것 -->
+            <div class="teamlistboxes">
+                <div class="teamlistbox teamboxone">
+                    <div class="teamimage">
+                        <img src="image/teamimage.jpg" alt="">
+                    </div>
+                    <div class="teamboxoneleft">
+                        <!-- 텍스트처리 -->
+                        <h1><a href="">구트아카데미팀</a></h1>
+                        <p><ion-icon name="location-outline"></ion-icon>장소: 구로디지털단지역 부근 등급: 무관 조건: 자바,spring 사용 가능</p>
+                        <!-- 태그처리 -->
+                        <div class="languagetag">
+                           <a href="">java</a>
+                           <a href="">html</a>
+                           <a href="">css</a>
+                           <a href="">js</a>
+                           <a href="">spring</a>
+                        </div>
+                        <!-- 날짜처리 -->
+                        <p>2022-08-19</p>
+                    </div>
+                    <div class="teamboxoneright">
+                        <div class="teambtndiv">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">4명 지원</button>
+                        </div>
+                            <ion-icon name="heart-outline" class="iconheart"></ion-icon>
+                            <ion-icon name="link-outline" class="iconlink"></ion-icon>
+                            <!-- 숫자처리 -->
+                            <!-- <span>숫자</span> -->
+                            <!-- div하나 더 만들어서 따로 마진주기 -->
+                    </div>
+                </div>
 
-            <!-- 작업 섹션 공간 -->
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates vero iusto eos nostrum aperiam natus optio. Aspernatur perspiciatis amet consequuntur ipsam cupiditate, excepturi molestiae! Excepturi ullam nobis ducimus optio quam?
+                <div class="teamlistbox teamboxtwo"></div>
+                <div class="teamlistbox teamboxthr"></div>
+                <div class="teamlistbox teamboxfour"></div>
+            </div>
+        </div>
 
         <!-- ============================ -->
 
@@ -60,7 +122,6 @@
                 <li>에러 해결 요청</li>
                 <li>랭킹 페이지</li>
                 <li>또 뭐 있냐</li>
-
                 <li>여기에 다크모드?</li>    
                 <li>여긴 뭐넣지</li>    
             </ul>
@@ -73,8 +134,27 @@
     <!-- 푸터 -->
     <div class="common_footer">푸터임다</div>
 
+     <!--******************** 모달 ***********************-->
+     <!-- <div class="modalbackground">
+        <div class="modalview">
+            <div class="modalleft">
+                <div class="teamdata">
+
+                </div>
+                <div class="btndiv">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">팀 요청</button>
+                </div>
+            </div>
+            <div class="modalright">
+                <div class="graph">월별 에러 해결 건수 그래프</div>
+                <div class="table">팀 수상내역 테이블</div>
+            </div>
+            <ion-icon name="close-outline" class="xicon"></ion-icon>
+        </div>
+    </div> -->
+
 </body>
 
-<script src="/js/BasicFrame.js"></script>
+<script src="./BasicFrame.js"></script>
 
 </html>
