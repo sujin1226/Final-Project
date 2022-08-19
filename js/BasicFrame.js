@@ -1,11 +1,17 @@
 // 사이드바
 let Btn = document.querySelector(".Sidebar_btn"); // 사이드바 버튼
 let common_sidebar = document.querySelector(".common_sidebar");// 사이드바 섹션
+
+let BtnChange= document.querySelector(".uil-align-justify");// 사이드바 섹션
+
+console.log(BtnChange);
+
 // 스크롤버튼
 let TopBtn = document.querySelector(".toTop"); // 상단 스크롤 이동 버튼
 // 마이페이지
 let User = document.querySelector(".user"); // 헤더 유저정보 버튼
 let user_dropdown = document.querySelector(".user_dropdown"); // 헤더 마이페이지 드롭다운
+// 알람기능
 
 
 let flag = false; // 토글 스위치 사이드바용
@@ -14,16 +20,17 @@ let flag2 = false; // 토글 스위치 유저 드롭다운용
 // 사이드바 버튼 이벤트
 Btn.addEventListener('click',function(){
     if(flag==false){
-        Btn.style.left="0px";
-        common_sidebar.style.left="-200px";
+        Btn.style.left="200px";
+        common_sidebar.style.left="0px";
+        BtnChange.className="uil uil-times"
 
         transition(Btn);
         transition(common_sidebar);
         flag =!flag;
-
     }else if(flag==true){
-        Btn.style.left="200px";
-        common_sidebar.style.left="0px";
+        Btn.style.left="0px";
+        common_sidebar.style.left="-200px";
+        BtnChange.className="uil uil-align-justify";
 
         transition(Btn);
         transition(common_sidebar);
