@@ -3,21 +3,39 @@
     margin: 0px;
 }
 
-/* 헤더 */
-.common_header{
-    width: 100%;
-    height: 100px;
+:root{
+    --main-black-color: rgb(29,32,34);
+    --main-white-color:rgb(247,247,247);
+    --main-red-color: rgb(238,43,42);
+    --main-text-color: rgb(247,247,247);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 2px red;
+    --ex-border-color: crimson;
 }
 
+/* 헤더 */
+
+.uil-align-justify,.uil-times{
+   font-size: 30px;
+   color: var(--main-text-color);
+}
+
+.common_header{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    border: solid 2px var(--ex-border-color);
+
+    background-color: rgb(29,32,34);
+}
+
+/* 유저 드롭다운 */
 .user_dropdown{
     display: none;
-    border: solid 2px red;
-    background-color: brown;
+    border: solid 2px var(--main-text-color);
+    background-color: var(--main-black-color);
+    color: var(--main-text-color);
 
     position: absolute;
     z-index: 100;
@@ -25,12 +43,15 @@
     top : 100px;
     right: 0;
 }
+.logo{
+    /* margin: 10% 10%; */
+}
 
 /* 로고 이미지*/
 .logo>img{
-    width: 200px;
+    width: 100px;
     height: 80px;
-    border: 2px solid red;
+    /* border: solid 2px var(--main-text-color); */
 }
 
 /* 검색창 */
@@ -42,9 +63,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    margin: 20% 20%;
 }
 input[type=text]{
-    border: 1px solid red;
+    border: solid 2px var(--main-text-color);
     width: 350px;
     height: 33px;
 }
@@ -63,21 +86,26 @@ input:focus{
     width: 100%;
     height: 150vh;
 
-    border: solid 2px blue;
+    border: solid 2px var(--ex-border-color);
+    background-color: var(--main-white-color);
+
     position: relative;
+
+    display: flex;
+    justify-content: center;
 }
 
 
 /* 사이드바 */
 .common_sidebar{
-    width: 200px;
+    width: 12.5%;
     height: 150vh;
-    border: solid 2px red;
-    background-color: whitesmoke;
+    border: solid 2px var(--ex-border-color);
+    background-color: var(--main-black-color);
 
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -200px;
 }
 .sidebar_menu{
     /* border: solid 5px brown; */
@@ -86,11 +114,12 @@ input:focus{
     padding: 0;
 }
 .sidebar_menu>li{
-    border: solid 2px red;
+    /* border: solid 2px red; */
     width: 100%;
     height: 10vh;
     text-align: center;
     line-height: 60px;
+    color: var(--main-text-color);
 }
 /* 사이드바 카테고리 상하 나누는 부분 */
 .sidebar_menu>li:nth-child(6){
@@ -100,12 +129,14 @@ input:focus{
 /* 토글 스위치 */
 .Sidebar_btn{
     width: 50px;
-    height: 50px;
-    background-color: blue;
-
-    position: absolute;
-    left: 200px;
-    top: 0px;
+    height: 80px;
+    background-color: var(--main-black-color);
+    
+    border: solid 2px var(--main-text-color);
+   
+    /* position: absolute;
+    left: 0px;
+    top: 0px; */
 }
 
 
@@ -122,8 +153,14 @@ input:focus{
 /* 푸터 */
 .common_footer{
     width: 100%;
-    height: 150px;
+    height: 15vh;
 
-    border: solid 2px red;
+    border: solid 2px var(--ex-border-color);
+    background-color: var(--main-black-color);
 }
 
+.main{
+    border: solid 2px var(--ex-border-color);
+    width: 75%;
+
+}
