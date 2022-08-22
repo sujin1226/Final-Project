@@ -1,0 +1,145 @@
+:root{
+    --main-black-color: rgb(29,32,34); /* 메인 블랙칼라 */
+    --main-white-color:rgb(247,247,247);  /* 메인 화이트칼라 */
+    --main-red-color: rgb(238,43,42);  /* 메인 레드 칼라 */
+    --main-text-color: rgb(247,247,247);
+    --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
+    
+    --teamlist-border: 1px solid gainsboro;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.teamlistcontainer{
+    width: 100%;
+    height: 150vh;
+    border: solid 3px blue;
+    padding: 0 10%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-black-color);
+}
+
+/* 팀목록 틀 */
+.teamlistbox{
+    border-top: var(--teamlist-border);
+    padding: 2vh 1vh;
+    display: flex;
+}
+/* 팀이름 */
+.teamtitle{
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+.teamtitle:hover{
+    color: #0064CD;
+}
+/* 내용 */
+.teamdescription{
+    font-size: 1rem;
+    padding: 2vh 0;
+}
+/* 태그 */
+.tagbtn{
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 1vh;
+}
+.tagbtn:hover{
+    background-color: rgb(190, 189, 189);
+}
+/* 날짜 */
+.teamcreationdate{
+    font-size: 0.9rem;
+    padding: 1vh 0;
+}
+/* 큰 틀 */
+.teamlistboxleft{
+    width: 85%;
+}
+.teamlistboxright{
+    width: 15%;
+    border-left: var(--teamlist-border);
+}
+.btndiv{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teamicons{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+/* 좋아요 */
+.heart{
+    font-size: 1.4rem;
+    cursor: pointer; 
+}
+/* 좋아요 수 */
+.heartcount{
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    margin-right: 50px;
+}
+
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; 
+}
+/* 모집인원 */
+.join{
+    background-color: #0078FF;
+    color: var(--main-text-color);
+}
+/* 마감 */
+.joinend{
+    background-color: var(--main-red-color);
+    color: var(--main-text-color);
+}
+/* 링크 */
+.linkcopy{
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    /*2022-08-22 kyh */
+    /* tooptip때문에 추가 */
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    top: 100%;
+    left: -60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--main-text-color);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+
+    transition: all .2s;
+    opacity: 0;
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: 35%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+}
