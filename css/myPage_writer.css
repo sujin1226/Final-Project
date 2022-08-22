@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root{
+    --main-black-color: rgb(29,32,34); /* 메인 블랙칼라 */
+    --main-white-color:rgb(247,247,247);  /* 메인 화이트칼라 */
+    --main-red-color: rgb(238,43,42);  /* 메인 레드 칼라 */
+    --main-text-color: rgb(247,247,247);
+
+    --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
+
+    
+}
+
+/* ================================= */
+
+/* 여기부터 긁어라 */
+.myActivities{
+    width: 100%;
+    height: 150vh;
+    border: solid 3px blue;
+
+    padding: 0% 10%;
+    
+}
+
+.myActivities_header{
+    width: 100%;
+    height: 10%;
+    border: solid 3px blue;
+}
+.myActivities_section{
+    width: 100%;
+    height: 40%;
+    border: solid 3px green;
+}
+
+.myActivities_section>ul{
+    margin: 0;
+    padding: 0;
+}
+.myActivities_section>ul>li{
+    margin: 0;
+    list-style-type: none;
+
+    width: 100%;
+    height: 8vh;
+    border: solid 3px var(--ex-border-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myActivities_section>ul>li>span{
+    margin-left: 50%;
+}
