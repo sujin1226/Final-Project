@@ -1,0 +1,46 @@
+
+/* ========================================================= */
+/* 관리자페이지 
+    20220822 add bear */
+.admin_main{
+    background-color: whitesmoke;
+    border: solid 2px var(--ex-border-color);
+    height: 150vh;
+    width: 95%;
+}
+
+.adminTitle{
+   border: solid 3px  blue;
+   height: 8vh;
+}
+
+.adminF{
+    border: solid 3px green;
+    /* width: 400px; */
+    height: 7vh;
+}
+
+input[type=text]{
+    border: solid 2px black;
+    width: 350px;
+    height: 33px;
+}
+input:focus{
+    outline: none;
+}
+
+.adminS{
+    border: solid 3px orangered;
+    height: 70vh;
+}
+
+.adminT{
+    border: solid 3px yellow;
+    height: 65vh;
+}
+
+.adminT>p>span{
+    color: red;
+    font-weight: bold;
+}
+
