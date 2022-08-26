@@ -113,3 +113,4 @@ function sideFun(event,color){
     })
     }
 }
+
