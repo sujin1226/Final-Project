@@ -1,29 +1,35 @@
 const linkcopy = document.querySelectorAll('.linkcopy');
 const tooltip = document.querySelectorAll('.tooltip');
-const tooptiptriangle = document.querySelectorAll('.tooptip::after');
+const tooltiptwo = document.querySelectorAll('.tooltiptwo');
 
-// tooptip copy 효과
+// tooptip 효과
+
+//***마우스를 올렸을 때 이벤트 작동이 조금 불안정한듯함***
 for(let i=0; i<linkcopy.length; i++)
 {
+    /**링크 아이콘에 마우스를 올렸을 때 작동하는 이벤트 */
     linkcopy[i].addEventListener('mouseover', function(){
+        tooltip[i].classList.add('ani');
         tooltip[i].style.opacity = '1';
     })
+}
 
-    tooltip[i].addEventListener('click', function(){
-        tooltip[i].innerHTML = 'Copied';
-    })
-
-    linkcopy[i].addEventListener('click', function(){
-        tooltip[i].innerHTML = 'Copied';
-    })
-    
+for(let i=0; i<linkcopy.length; i++)
+{
+    /**링크 아이콘에 마우스를 out했을 때 작동하는 이벤트 */
     linkcopy[i].addEventListener('mouseout', function(){
+        tooltip[i].classList.remove('ani');
         tooltip[i].style.opacity = '0';
-    })
-
-    tooltip[i].addEventListener('mouseout', function(){
-        tooltip[i].innerHTML = 'Copy';
+        tooltiptwo[i].style.opacity = '0';
     })
 
 }
 
+for(let i=0; i<tooltip.length; i++)
+{
+    /**링크 아이콘에 마우스를 click했을 때 작동하는 이벤트 */
+    linkcopy[i].addEventListener('click', function(){
+        tooltiptwo[i].style.opacity = '1';
+        tooltip[i].style.opacity = '0';
+    })
+}
