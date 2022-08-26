@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ranking.css">
+    <title>랭킹페이지</title>
+</head>
+<body>
+<div class="rankingcontanier">
+    <div class="rankingtypediv">
+        <div class="rankingtype">기여도별(활동점수->팀원의 평균활동점수가 높은순?) 순위</div>
+        <div class="rankingtype">해결건수별 순위</div>
+        <div class="rankingtype">커미션별 순위</div>
+    </div>
+    
+    <div class="rankingserach">
+        <input type="text" placeholder="랭킹검색">
+        <button>검색</button>
+    </div>
+
+    <div class="rankingtopdiv">
+        <div class="rankingtop">1위</div>
+        <div class="rankingtop">2위</div>
+        <div class="rankingtop">3위</div>
+    </div>
+
+    <div class="rankingdiv">
+        <table>
+            <thead>
+                <td>순위</td>
+                <td>팀이름</td>
+                <td>활동점수</td>
+                <td>해결건수</td>
+                <td>누적 커미션</td>
+            </thead>
+            <!-- 50위까지 foreach로 -->
+            <tbody>
+                <td>4</td>
+                <td>구트아카데미</td>
+                <td>1.5k</td>
+                <td>3,200</td>
+                <td>1,000,000</td>
+            </tbody>
+            <tbody>
+                <td>5</td>
+                <td>구트아카데미</td>
+                <td>1.5k</td>
+                <td>3,200</td>
+                <td>1,000,000</td>
+            </tbody>
+            <tbody>
+                <td>6</td>
+                <td>구트아카데미</td>
+                <td>1.5k</td>
+                <td>3,200</td>
+                <td>1,000,000</td>
+            </tbody>
+            <!-- ... -->
+        </table>
+    </div>
+
+    <div class="rankingpaging">
+        페이지 넘기기
+    </div>
+</div>    
+</body>
+</html>
