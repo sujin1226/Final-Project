@@ -12,39 +12,221 @@
 </head>
 
 <body>
+    <!-- ======================== 헤더 ======================= -->
+    <div class="common_header">
+        <!-- 헤더 섹션 왼쪽 -->
+        <div class="common_header_left">
 
-        <!-- 메인섹션 -->
-        <div class="admin_main">
-            <div class="adminTitle">
-                <h1>관리권한설정</h1>
-            </div>
-            <!-- 관리권한정보 검색창 (추후 삭제 가능성있음) -->
-            <div class="adminF">
-                <input type="text" placeholder="Search here...">
-                <i class="uil uil-search"></i>
-            </div>
-            <div class="adminS">
-                <h1> 체크박스탭&nbsp;| 회원아이디탭&nbsp;| 메뉴탭&nbsp;| 권한(여or부)탭</h1>
-                <button>선택삭제</button>
-            </div>
-            <div class="adminT">
-                <h3>관리권한 추가</h3>
-                <p>다음 양식에서 회원에게 관리권한을 부여하실 수 있습니다.</p>
-                <p>권한 <span>r</span>은 읽기권한, <span>w</span>는 쓰기권한, 
-                    <span>d</span>는 삭제권한입니다.</p> <br>
-                회원아이디 <input type="text"> <br>
-                접근가능메뉴 <input type="text"> <br> 
-                권한지정 <input type="checkbox" name="" id=""> r (읽기)
-                        <input type="checkbox" name="" id=""> w (쓰기)
-                        <input type="checkbox" name="" id=""> d (삭제) <br>
-                <button>추가</button>
-            </div>
-            <!-- ==============작업공간============== -->
         </div>
-                <!-- 상단 스크롤 이동 -->
-        
+        <!-- 헤더 섹션 가운데 -->
+        <div class="common_header_center">
+            <!-- 카테고리 -->
+            <ul class="header_menu">
+                <li><a href="">메인페이지</a></li>
+                <li><a href="">메인페이지</a></li>
+                <li><a href="">메인페이지</a></li>
+                <li><a href="">메인페이지</a></li>
+                <li><a href="">메인페이지</a></li>
+            </ul>
+            <!-- 서치바 -->
+            <div class="search">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+        </div>
+        <!-- 헤더 섹션 오른쪽 -->
+        <div class="common_header_right">
+            <!-- 마이페이지 -->
+            <div class="user">
+                <i class="uil uil-user-circle"></i>
+                <ul class="user_dropdown">
+                    <li>마이페이지</li>
+                    <li>로그아웃</li>
+                    <li>내팀관리</li>
+                </ul>
+            </div>
+            <!-- 알림페이지 -->
+            <div class="alarm">
+                <i class="uil uil-bell"></i>
+            </div>
+        </div>
     </div>
 
+    <!-- ======================== 작업 섹션 ======================= -->
+    <div class="common_section">
+        <!-- 왼쪽 사이드 -->
+        <div class="sideLeft">
+            <div class="myList">
+                <ul>
+                    <li>첫 메인은 여기</li>
+                    <li>비어있는 칸or광고임</li>
+                    <li>위 카테고리 페이지 누르면</li>
+                    <li>해당 페이지에 대한</li>
+                    <li>카테고리가</li>
+                    <li>나옴니다</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 메인섹션 -->
+        <div class="main">
+            <!-- 관리자페이지 2022-08-22 bear 
+                  여기서부터 작업하고 최종파일에 복붙하기 -->
+            <div class="admin">
+                <ul class="adminTitle">
+                    <li><a href="">회원관리</a></li>
+                    <li><a href="">게시판관리</a></li>
+                    <li><a href="">1:1문의</a></li>
+                </ul>
+            </div>
+            <!-- 관리권한정보 검색창 (추후 삭제 가능성있음) -->
+            <!-- <div class="adminF">
+                <div class="admin_search">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search here...">
+                </div>
+                추후 삭제될수있음
+            </div> -->
+            <div class="adminS">
+                <!-- 각 팀 팀장 권한승인탭 -->
+                <table border="1" class="admin_set">
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>회원아이디</td>
+                        <td>메뉴</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>양광모</td>
+                        <td>팀관리</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>서승혁</td>
+                        <td>팀관리</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>김수진</td>
+                        <td>팀관리</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>김수근</td>
+                        <td>팀관리</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>김양희</td>
+                        <td>팀관리</td>
+                    </tr>
+                </table>
+                <br>
+                <button>권한승인</button>
+                <button>권한삭제</button>
+            </div>
+
+            <!-- <div class="adminTitle">
+                <h1>회원관리</h1>
+            </div>
+            <div class="adminT">
+                <button>전체목록</button>
+                <button>총회원수</button>
+                <button>탈퇴</button>
+                <br>
+                <br>
+                <table border="1" class="admin_Customer">
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>이름</td>
+                        <td>아이디</td>
+                        <td>닉네임</td>
+                        <td>컬럼2</td>
+                        <td>컬럼3</td>
+                        <td>컬럼4</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>양광모</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>서승혁</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>김수진</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>김수근</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>김양희</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>사람1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>사람2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div> -->
+            <!-- 여기까지 복붙라인 -->
+            <!-- ==============작업공간============== -->
+        </div>
+
+        <!-- 오른쪽 사이드 -->
+        <div class="sideRight">
+
+        </div>
+
+        <!-- 상단 스크롤 이동 -->
+        <div class="toTop"><i class="uil uil-arrow-circle-up"></i></div>
+
+
+    </div>
+
+    <!-- 푸터 -->
+    <div class="common_footer">푸터임다</div>
 
 </body>
 

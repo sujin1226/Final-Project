@@ -1,0 +1,50 @@
+.loginDiv{
+    width: 70%;
+    height: 120vh;
+    margin: auto;
+    border: 2px solid red;
+}
+.loginLogo{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid blue;
+}
+.loginLogo > img{
+    border: 1px solid green;
+}
+.login_Join{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid violet;
+}
+
+.login{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid crimson;
+}
+.login_Btn{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    border: 2px solid orangered;
+}
+
+.login_Sns{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid rgb(13, 184, 56);
+}
+
+
+

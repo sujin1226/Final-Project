@@ -1,0 +1,20 @@
+.detailBoard_container {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+}
+.detailSubTitle{
+    margin: 20px;
+}
+.detailContent {
+    margin: 0 20px;
+}
+.detailContent > p {
+    margin-top: 15px;
+}
+.detailTag > span:first-child {
+    margin-left: 20px;
+}
+.detailTag > span:not(:first-child) {
+    margin-left: 10px;
+}
