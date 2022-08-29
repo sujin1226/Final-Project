@@ -99,16 +99,21 @@ input:focus{
 
 /* 유저 드롭다운 */
 .user_dropdown{
-    display: none;
+    display:block;
     border: solid 2px var(--main-text-color);
     background-color: var(--main-black-color);
     color: var(--main-text-color);
 
-    position: absolute;
+    position:absolute;
     z-index: 100;
-    width: 150px;
-    top : 100px;
-    right: 0;
+    width:100px;
+    top:75px;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+.user_dropdown > li {
+    margin: 10px 0;
 }
 
 /* 마이페이지, 알람기능 */
@@ -121,6 +126,7 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* 아이콘 사이즈 조절부 */
