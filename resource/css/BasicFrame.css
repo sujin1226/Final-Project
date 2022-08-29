@@ -36,6 +36,8 @@ a{
     width: 15%;
     height: 100%;
     border: 2px solid pink;
+
+    color: white;
 }
 /* 헤더 가운데 */
 .common_header_center{
@@ -97,19 +99,7 @@ input:focus{
     align-items: center;
 }
 
-/* 유저 드롭다운 */
-.user_dropdown{
-    display: none;
-    border: solid 2px var(--main-text-color);
-    background-color: var(--main-black-color);
-    color: var(--main-text-color);
 
-    position: absolute;
-    z-index: 100;
-    width: 150px;
-    top : 100px;
-    right: 0;
-}
 
 /* 마이페이지, 알람기능 */
 .user,.alarm{
@@ -121,6 +111,19 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+}
+
+.dropList{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: 3px solid blue;
+
+    top: 10%;
+    right: 15%;
+    z-index: 100;
 }
 
 /* 아이콘 사이즈 조절부 */
