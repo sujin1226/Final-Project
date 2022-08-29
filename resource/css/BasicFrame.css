@@ -59,7 +59,6 @@ a{
     width: 130px;
     height: 50px;
     border: 2px solid pink;
-
 }
 .header_menu>li{
     list-style-type: none;
@@ -100,6 +99,25 @@ input:focus{
 }
 
 
+/* 유저 드롭다운 */
+.user_dropdown{
+    display:block;
+    border: solid 2px var(--main-text-color);
+    background-color: var(--main-black-color);
+    color: var(--main-text-color);
+
+    position:absolute;
+    z-index: 100;
+    width:100px;
+    top:75px;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+.user_dropdown > li {
+    margin: 10px 0;
+}
+
 
 /* 마이페이지, 알람기능 */
 .user,.alarm{
@@ -111,7 +129,6 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
 }
 
@@ -124,6 +141,7 @@ input:focus{
     top: 10%;
     right: 15%;
     z-index: 100;
+
 }
 
 /* 아이콘 사이즈 조절부 */
