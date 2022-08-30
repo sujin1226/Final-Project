@@ -1,4 +1,3 @@
-/* ***************팀정보 모달창*************** */
 .modalbackground{
     width: 100%;
     height: 100vh;
@@ -27,7 +26,6 @@
 .teamdata{
     width: 100%;
     height: 60%;
-    padding: 10px;
 }
 .fa-user{
     background-color: gainsboro;
@@ -42,7 +40,16 @@
 .teammember{
     padding: 5px;
 }
-/* 버튼 */
+.teammember ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.teammember li{
+    padding: 0 5px;
+}
 .btndiv{
     width: 100%;
     height: 30%;
@@ -56,7 +63,8 @@ button{
     cursor: pointer;
 }
 .teamrequestbtn{
-    background-color: #0078FF;
+    /* background-color: #0078FF; */
+    background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
     color: whitesmoke;
     border: none;
     border-radius: 5px;
@@ -120,8 +128,10 @@ button{
     height: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .table table{
+    width: 90%;
     border: 1px solid black;
     border-collapse: collapse;
     margin-left: 15px;
