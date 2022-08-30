@@ -1,3 +1,5 @@
+/* teamlist에서 씀 -> 높이 없애놔서 따로 둠 */
+
 *{ box-sizing: border-box;  margin: 0px; }
 
 :root{
@@ -75,15 +77,6 @@ a{
     justify-content: space-around;
     align-items: center;
 
-}
-input[type=text]{
-    border: solid 2px var(--main-text-color);
-    border-radius: 20px;
-    width: 200px;
-    height: 33px;
-}
-input:focus{
-    outline: none;
 }
 .uil-search{color: white;}
 
