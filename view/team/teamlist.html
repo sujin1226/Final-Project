@@ -4,222 +4,324 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="/resource/css/teamlist.css">
-     <!-- 아이콘 -->
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- 유니콘 아이콘 사이트 -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/resource/css/teamlist.css">
+    <link rel="stylesheet" href="/resource/css/BasicFrame copy.css">
+    <title>HotFix</title>
 </head>
 <body>
-<div class="teamlistcontainer">
+<div class="container">
+    <!-- ======================== 헤더 ======================= -->
+    <div class="common_header">
+        <!-- 헤더 섹션 왼쪽 -->
+        <div class="common_header_left">
+            여기에 로고 들어감
+        </div>
+        <!-- 헤더 섹션 가운데 -->
+        <div class="common_header_center">
+            <!-- 카테고리 -->
+            <ul class="header_menu">
+                <li><a href="">HOTFIX</a></li>
+                <li><a href="">팀페이지</a></li>
+                <li><a href="">랭킹</a></li>
+                <li><a href="">커뮤니티</a></li>
+            </ul>
+            <!-- 서치바 -->
+            <div class="search">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+        </div>
+        <!-- 헤더 섹션 오른쪽 -->
+        <div class="common_header_right">
+            <!-- 마이페이지 -->
+            <div class="user">
+                <i class="uil uil-user-circle"></i>
+                
+            </div>
+            <!-- 알림페이지 -->
+            <div class="alarm">
+                <i class="uil uil-bell"></i>
+            </div>
+        </div>
+        <div class="dropList">
+            
+        </div>
+       
+    </div>
+    <!-- ======================== 작업 섹션 ======================= -->
+    <div class="common_section">
+        <!-- 왼쪽 사이드 -->
+        <div class="sideLeft">
+            <div class="myList">
+                <ul>
+                    <li>첫 메인은 여기</li>
+                    <li>비어있는 칸or광고임</li>
+                    <li>위 카테고리 페이지 누르면</li>
+                    <li>해당 페이지에 대한</li>
+                    <li>카테고리가</li>
+                    <li>나옴니다</li>   
+                </ul>
+            </div>
+        </div>
+        <!-- 메인섹션 -->
+        <div class="main">
+            <!-- 
+                *22-08-22 HIKARI
+                *** 테스트시  <div class="main"> 하고 테스트 할 것
+            -->
+            <!-- ==============작업공간============== -->
+                <div class="teamlistsearch">
+                    <div class="searchbar">
+                        <!-- 전체, (날짜)최신순 > 선택(체크박스 or select option)
+                        / 언어 > 선택
+                        / 종합검색기능 -->
+                        <div class="type">
+                            <!-- 체크하면 filter기능 -->
+                            <input type="checkbox" id="cb1">
+                            <label for="cb1"></label>
+                            전체
+                            <input type="checkbox" id="cb2">
+                            <label for="cb2"></label>
+                            최신순
+                        </div>
+                        <div class="search-box">
+                            <form action="." method="post">
+                              <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
+                              <!-- 클릭 시 검색되는 기능 -->
+                              <i class="uil uil-search"></i>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="teammakingbtn">
+                        <a href="teammaking.html"><button>팀만들기</button></a>
+                    </div>
+                </div>
+            
+                <!-- 몇박스 view할지는 아직 미정 -->
+                <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                        <div class="teamtitle">team Name</div>
+                        <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
+                        <div class="languagetag">
+                            <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                            <button type="button" class="tagbtn"><a href="">DB</a></button>
+                            <button type="button" class="tagbtn"><a href="">JS</a></button>
+                        </div>
+                        <div class="teamcreationdate">2022-08-22</div>
+                   </div>
+                   <div class="teamlistboxright">
+                        <div class="btndiv">
+                            <button class="join btn">모집 인원 : 1 명</button>
+                        </div>
+                        <div class="teamicons">
+                            <div class="heart icons">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </div>
+                            <div class="heartcount icons"><a href="">1(숫자)</a></div>
+                            <div class="linkcopy icons">
+                                <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                                <span class="tooltip">Copy</span>
+                                <span class="tooltiptwo">Copied</span>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            
+                <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                         <div class="teamtitle">team Name</div>
+                         <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
+                         <div class="languagetag">
+                             <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                             <button type="button" class="tagbtn"><a href="">DB</a></button>
+                             <button type="button" class="tagbtn"><a href="">JS</a></button>
+                         </div>
+                         <div class="teamcreationdate">2022-08-22</div>
+                    </div>
+                    <div class="teamlistboxright">
+                         <div class="btndiv">
+                             <button class="joinend btn">마감</button>
+                         </div>
+                         <div class="teamicons">
+                             <div class="heart icons">
+                                 <ion-icon name="heart-outline"></ion-icon>
+                             </div>
+                             <div class="heartcount icons"><a href="">1(숫자)</a></div>
+                             <div class="linkcopy icons">
+                                <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                                 <span class="tooltip">Copy</span>
+                                 <span class="tooltiptwo">Copied</span>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            
+                 <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                         <div class="teamtitle">team Name</div>
+                         <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
+                         <div class="languagetag">
+                             <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                             <button type="button" class="tagbtn"><a href="">DB</a></button>
+                             <button type="button" class="tagbtn"><a href="">JS</a></button>
+                         </div>
+                         <div class="teamcreationdate">2022-08-22</div>
+                    </div>
+                    <div class="teamlistboxright">
+                         <div class="btndiv">
+                             <button class="join btn">모집 인원 : 1 명</button>
+                         </div>
+                         <div class="teamicons">
+                             <div class="heart icons">
+                                 <ion-icon name="heart-outline"></ion-icon>
+                             </div>
+                             <div class="heartcount icons"><a href="">1(숫자)</a></div>
+                             <div class="linkcopy icons">
+                                <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                                 <span class="tooltip">Copy</span>
+                                 <span class="tooltiptwo">Copied</span>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            
+                 <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                         <div class="teamtitle">team Name</div>
+                         <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
+                         <div class="languagetag">
+                             <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                             <button type="button" class="tagbtn"><a href="">DB</a></button>
+                             <button type="button" class="tagbtn"><a href="">JS</a></button>
+                         </div>
+                         <div class="teamcreationdate">2022-08-22</div>
+                    </div>
+                    <div class="teamlistboxright">
+                         <div class="btndiv">
+                             <button class="join btn">모집 인원 : 1 명</button>
+                         </div>
+                         <div class="teamicons">
+                             <div class="heart icons">
+                                 <ion-icon name="heart-outline" class="md hydrated"></ion-icon>
+                             </div>
+                             <div class="heartcount icons"><a href="">1(숫자)</a></div>
+                             <div class="linkcopy icons">
+                                <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                                 <span class="tooltip">Copy</span>
+                                 <span class="tooltiptwo">Copied</span>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            
+                 <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                         <div class="teamtitle">team Name</div>
+                         <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
+                         <div class="languagetag">
+                             <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                             <button type="button" class="tagbtn"><a href="">DB</a></button>
+                             <button type="button" class="tagbtn"><a href="">JS</a></button>
+                         </div>
+                         <div class="teamcreationdate">2022-08-22</div>
+                    </div>
+                    <div class="teamlistboxright">
+                         <div class="btndiv">
+                             <button class="join btn">모집 인원 : 1 명</button>
+                         </div>
+                         <div class="teamicons">
+                             <div class="heart icons">
+                                 <ion-icon name="heart-outline" class="md hydrated"></ion-icon>
+                             </div>
+                             <div class="heartcount icons"><a href="">1(숫자)</a></div>
+                             <div class="linkcopy icons">
+                                <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                                 <span class="tooltip">Copy</span>
+                                 <span class="tooltiptwo">Copied</span>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            
+                 <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                         <div class="teamtitle">team Name</div>
+                         <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
+                         <div class="languagetag">
+                             <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                             <button type="button" class="tagbtn"><a href="">DB</a></button>
+                             <button type="button" class="tagbtn"><a href="">JS</a></button>
+                         </div>
+                         <div class="teamcreationdate">2022-08-22</div>
+                    </div>
+                    <div class="teamlistboxright">
+                         <div class="btndiv">
+                             <button class="join btn">모집 인원 : 1 명</button>
+                         </div>
+                         <div class="teamicons">
+                             <div class="heart icons">
+                                 <ion-icon name="heart-outline"></ion-icon>
+                             </div>
+                             <div class="heartcount icons"><a href="">1(숫자)</a></div>
+                             <div class="linkcopy icons">
+                                <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                                 <span class="tooltip">Copy</span>
+                                 <span class="tooltiptwo">Copied</span>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+            
+                 <div class="teamlistpaging">
+                    <!-- 페이지 넘기기 -->
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                 </div>
+            <!-- ==============작업공간============== -->
+        </div>
+        
+        <!-- 오른쪽 사이드 -->
+        <div class="sideRight">
 
-    <div class="teamlistsearch">
-        <div class="searchbar">
-            전체, (날짜)최신순 > 선택(체크박스 or select option)
-            / 언어 > 선택
-            / 종합검색기능
         </div>
-        <div class="teammakingbtn">
-            <a href="teammaking.html"><button>팀만들기</button></a>
-        </div>
+
+        <!-- 상단 스크롤 이동 -->
+        <div class="toTop"><i class="uil uil-arrow-circle-up"></i></div>
+
     </div>
 
-    <!-- 몇박스 view할지는 아직 미정 -->
-    <div class="teamlistbox">
-        <div class="img">
-            <img src="/resource/img/pIiRs.jpg" alt="">
-        </div>
-        <div class="teamlistboxleft">
-            <div class="teamtitle">team Name</div>
-            <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
-            <div class="languagetag">
-                <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                <button type="button" class="tagbtn"><a href="">DB</a></button>
-                <button type="button" class="tagbtn"><a href="">JS</a></button>
-            </div>
-            <div class="teamcreationdate">2022-08-22</div>
-       </div>
-       <div class="teamlistboxright">
-            <div class="btndiv">
-                <button class="join btn">모집 인원 : 1 명</button>
-            </div>
-            <div class="teamicons">
-                <div class="heart icons">
-                    <ion-icon name="heart-outline"></ion-icon>
-                </div>
-                <div class="heartcount icons"><a href="">1(숫자)</a></div>
-                <div class="linkcopy icons">
-                    <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                    <span class="tooltip">Copy</span>
-                    <span class="tooltiptwo">Copied</span>
-                </div>
-            </div>
-       </div>
-    </div>
 
-    <div class="teamlistbox">
-        <div class="img">
-            <img src="/resource/img/pIiRs.jpg" alt="">
-        </div>
-        <div class="teamlistboxleft">
-             <div class="teamtitle">team Name</div>
-             <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
-             <div class="languagetag">
-                 <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                 <button type="button" class="tagbtn"><a href="">DB</a></button>
-                 <button type="button" class="tagbtn"><a href="">JS</a></button>
-             </div>
-             <div class="teamcreationdate">2022-08-22</div>
-        </div>
-        <div class="teamlistboxright">
-             <div class="btndiv">
-                 <button class="joinend btn">마감</button>
-             </div>
-             <div class="teamicons">
-                 <div class="heart icons">
-                     <ion-icon name="heart-outline"></ion-icon>
-                 </div>
-                 <div class="heartcount icons"><a href="">1(숫자)</a></div>
-                 <div class="linkcopy icons">
-                    <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                     <span class="tooltip">Copy</span>
-                     <span class="tooltiptwo">Copied</span>
-                 </div>
-             </div>
-        </div>
-     </div>
-
-     <div class="teamlistbox">
-        <div class="img">
-            <img src="/resource/img/pIiRs.jpg" alt="">
-        </div>
-        <div class="teamlistboxleft">
-             <div class="teamtitle">team Name</div>
-             <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
-             <div class="languagetag">
-                 <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                 <button type="button" class="tagbtn"><a href="">DB</a></button>
-                 <button type="button" class="tagbtn"><a href="">JS</a></button>
-             </div>
-             <div class="teamcreationdate">2022-08-22</div>
-        </div>
-        <div class="teamlistboxright">
-             <div class="btndiv">
-                 <button class="join btn">모집 인원 : 1 명</button>
-             </div>
-             <div class="teamicons">
-                 <div class="heart icons">
-                     <ion-icon name="heart-outline"></ion-icon>
-                 </div>
-                 <div class="heartcount icons"><a href="">1(숫자)</a></div>
-                 <div class="linkcopy icons">
-                    <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                     <span class="tooltip">Copy</span>
-                     <span class="tooltiptwo">Copied</span>
-                 </div>
-             </div>
-        </div>
-     </div>
-
-     <div class="teamlistbox">
-        <div class="img">
-            <img src="/resource/img/pIiRs.jpg" alt="">
-        </div>
-        <div class="teamlistboxleft">
-             <div class="teamtitle">team Name</div>
-             <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
-             <div class="languagetag">
-                 <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                 <button type="button" class="tagbtn"><a href="">DB</a></button>
-                 <button type="button" class="tagbtn"><a href="">JS</a></button>
-             </div>
-             <div class="teamcreationdate">2022-08-22</div>
-        </div>
-        <div class="teamlistboxright">
-             <div class="btndiv">
-                 <button class="join btn">모집 인원 : 1 명</button>
-             </div>
-             <div class="teamicons">
-                 <div class="heart icons">
-                     <ion-icon name="heart-outline" class="md hydrated"></ion-icon>
-                 </div>
-                 <div class="heartcount icons"><a href="">1(숫자)</a></div>
-                 <div class="linkcopy icons">
-                    <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                     <span class="tooltip">Copy</span>
-                     <span class="tooltiptwo">Copied</span>
-                 </div>
-             </div>
-        </div>
-     </div>
-
-     <div class="teamlistbox">
-        <div class="img">
-            <img src="/resource/img/pIiRs.jpg" alt="">
-        </div>
-        <div class="teamlistboxleft">
-             <div class="teamtitle">team Name</div>
-             <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
-             <div class="languagetag">
-                 <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                 <button type="button" class="tagbtn"><a href="">DB</a></button>
-                 <button type="button" class="tagbtn"><a href="">JS</a></button>
-             </div>
-             <div class="teamcreationdate">2022-08-22</div>
-        </div>
-        <div class="teamlistboxright">
-             <div class="btndiv">
-                 <button class="join btn">모집 인원 : 1 명</button>
-             </div>
-             <div class="teamicons">
-                 <div class="heart icons">
-                     <ion-icon name="heart-outline" class="md hydrated"></ion-icon>
-                 </div>
-                 <div class="heartcount icons"><a href="">1(숫자)</a></div>
-                 <div class="linkcopy icons">
-                    <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                     <span class="tooltip">Copy</span>
-                     <span class="tooltiptwo">Copied</span>
-                 </div>
-             </div>
-        </div>
-     </div>
-
-     <div class="teamlistbox">
-        <div class="img">
-            <img src="/resource/img/pIiRs.jpg" alt="">
-        </div>
-        <div class="teamlistboxleft">
-             <div class="teamtitle">team Name</div>
-             <div class="teamdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione, consequuntur harum voluptate deleniti, suscipit odit reprehenderit, qui aliquam debitis nostrum? Aliquam ad cupiditate, dicta ducimus itaque nisi molestiae impedit.</div>
-             <div class="languagetag">
-                 <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                 <button type="button" class="tagbtn"><a href="">DB</a></button>
-                 <button type="button" class="tagbtn"><a href="">JS</a></button>
-             </div>
-             <div class="teamcreationdate">2022-08-22</div>
-        </div>
-        <div class="teamlistboxright">
-             <div class="btndiv">
-                 <button class="join btn">모집 인원 : 1 명</button>
-             </div>
-             <div class="teamicons">
-                 <div class="heart icons">
-                     <ion-icon name="heart-outline"></ion-icon>
-                 </div>
-                 <div class="heartcount icons"><a href="">1(숫자)</a></div>
-                 <div class="linkcopy icons">
-                    <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                     <span class="tooltip">Copy</span>
-                     <span class="tooltiptwo">Copied</span>
-                 </div>
-             </div>
-        </div>
-     </div>
-
-     <div class="teamlistpaging">
-        페이지 넘기기
-     </div>
+    <!-- 푸터 -->
+    <div class="common_footer">푸터임다</div>
 </div>
-     <script src="./js/teamlist.js"></script>
 </body>
+<script src="/resource/js/BasicFrame.js"></script>
+<script src="/resource/js/teamlist.js"></script>
 </html>
