@@ -1,3 +1,5 @@
+/* teamlist에서 씀 -> 높이 없애놔서 따로 둠 */
+
 *{ box-sizing: border-box;  margin: 0px; }
 
 :root{
@@ -76,15 +78,6 @@ a{
     align-items: center;
 
 }
-input[type=text]{
-    border: solid 2px var(--main-text-color);
-    border-radius: 20px;
-    width: 200px;
-    height: 33px;
-}
-input:focus{
-    outline: none;
-}
 .uil-search{color: white;}
 
 /* 헤더 오른쪽 */
@@ -114,7 +107,6 @@ input:focus{
     padding: 10px 0 10px 0;
     text-align: center;
 }
-
 .user_dropdown > li {
     margin: 10px 0;
 }
@@ -142,6 +134,7 @@ input:focus{
     top: 10%;
     right: 15%;
     z-index: 100;
+
 }
 
 /* 아이콘 사이즈 조절부 */
