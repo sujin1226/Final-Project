@@ -114,6 +114,7 @@ input:focus{
     padding: 10px 0 10px 0;
     text-align: center;
 }
+
 .user_dropdown > li {
     margin: 10px 0;
 }
@@ -141,7 +142,6 @@ input:focus{
     top: 10%;
     right: 15%;
     z-index: 100;
-
 }
 
 /* 아이콘 사이즈 조절부 */
