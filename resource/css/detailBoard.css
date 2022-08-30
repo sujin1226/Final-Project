@@ -3,6 +3,7 @@
     height: 800px;
     margin: 0 auto;
 }
+
 .detailSubTitle{
     margin: 20px;
 }
@@ -12,9 +13,33 @@
 .detailContent > p {
     margin-top: 15px;
 }
+.detailTag {
+    margin-top: 20px;
+} 
 .detailTag > span:first-child {
     margin-left: 20px;
 }
 .detailTag > span:not(:first-child) {
     margin-left: 10px;
+}
+.detailCommentBox {
+    width: 95%;
+    margin: 50px auto;
+}
+.detailCommentBox > textarea {
+    margin-top: 30px;
+}
+.detailCommentBox > button {
+    padding: 5px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+.commentCon {
+    border-bottom: 1px solid black;
+    height: 50px;
 }
