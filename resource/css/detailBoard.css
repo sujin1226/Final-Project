@@ -3,7 +3,6 @@
     height: 800px;
     margin: 0 auto;
 }
-
 .detailSubTitle{
     margin: 20px;
 }
@@ -13,7 +12,9 @@
 .detailContent > p {
     margin-top: 15px;
 }
+/* 언어 태그 */
 .detailTag {
+    height: 30px;
     margin-top: 20px;
 } 
 .detailTag > span:first-child {
@@ -22,6 +23,33 @@
 .detailTag > span:not(:first-child) {
     margin-left: 10px;
 }
+/* 추천 비추천 */
+.detailLike {
+    width: 150px;
+    height: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.detailLike > span {
+    border: 1px solid #aaa;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.detailLike > span:hover  {
+    border: 1px solid black;
+}
+.detailLike > span:nth-child(2) {
+    width: 50px;
+}
+.detailLike > span i {
+    font-size: 25px;
+    }
+/* 댓글 작성란 */
 .detailCommentBox {
     width: 95%;
     margin: 50px auto;
@@ -36,7 +64,7 @@
     float: right;
     border-radius: 5px;
     border: none;
-    background-color: blueviolet;
+    background: rgb(235, 117, 48);
     color: white;
 }
 .commentCon {

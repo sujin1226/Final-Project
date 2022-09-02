@@ -43,7 +43,7 @@
 
 .board_nav>button {
     padding: 5px 20px;
-    background-color: rgb(114, 114, 236);
+    background: rgb(235, 117, 48);
     color: white;
     border: none;
 }
@@ -62,7 +62,7 @@
 
 .board_nav_btn>button {
     padding: 5px 20px;
-    background-color: rgb(114, 114, 236);
+    background: rgb(235, 117, 48);
     color: white;
     border: none;
 }
