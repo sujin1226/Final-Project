@@ -56,10 +56,10 @@
             <!-- 왼쪽 사이드 -->
             <div class="sideLeft">
                 <div class="adminList">
-                    <li><a href="">회원관리</a></li>
-                    <li><a href="">신고관리</a></li>
-                    <li><a href="">게시판관리</a></li>
-                    <li><a href="">1:1문의</a></li>
+                    <li><a href="/view/admin/admin_Member.html">회원관리</a></li>
+                    <li><a href="/view/admin/admin_Report.html">신고관리</a></li>
+                    <li><a href="/view/admin/admin_Board.html">게시판관리</a></li>
+                    <li><a href="/view/admin/admin_Ask.html">1:1문의</a></li>
                 </div>
             </div>
 
@@ -69,42 +69,37 @@
                   여기서부터 작업하고 최종파일에 복붙하기 -->
 
                 <div class="adminTitle">
-                    <h2>회원관리</h2>
+                    <h2>1:1 문의</h2>
                     <button class="removeBtn">선택삭제</button>
                 </div>
                 <div class="adminT">
-                    <button class="adminCbtn">전체목록</button>
-                    <button class="adminCbtn">총회원수</button><button class="Figure"> 60명</button>
-                    <button class="adminCbtn">차단</button><button class="Figure"> 3명</button>
-                    <button class="adminCbtn">탈퇴</button><button class="Figure"> 5명</button>
+                    <button class="admin_AskBtn">전체목록</button>
+                    <button class="admin_AskBtn">문의건수</button><button class="Ask_Figure"> 7건</button>
+                    <button class="admin_AskBtn">미처리</button><button class="Ask_Figure"> 2건</button>
+                    <button class="admin_AskBtn">처리중</button><button class="Ask_Figure"> 4건</button>
+                    <button class="admin_AskBtn">처리완료</button><button class="Ask_Figure"> 1건</button>
                     <br>
                     <br>
                     <table border="1" class="admin_Customer">
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>이름</td>
+                            <td>No.</td>
+                            <td>구분</td>
+                            <td>제목</td>
                             <td>아이디</td>
-                            <td>닉네임</td>
-                            <td>이메일</td>
-                            <td>핸드폰번호</td>
-                            <td>가입일</td>
-                            <td>컬럼명</td>
+                            <td>등록일</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>조준모</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>10</td>
+                            <td>test</td>
+                            <td>인출문의</td>
+                            <td>rrrrr</td>
+                            <td>2022-09-02</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>양광모</td>
-                            <td></td>
-                            <td></td>
+                            <td>9</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -112,19 +107,7 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>서승혁</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td>김수진</td>
-                            <td></td>
-                            <td></td>
+                            <td>8</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -132,19 +115,7 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>김수근</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td>김양희</td>
-                            <td></td>
-                            <td></td>
+                            <td>7</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -152,19 +123,7 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>사람1</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td>사람2</td>
-                            <td></td>
-                            <td></td>
+                            <td>6</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -172,9 +131,7 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>사람3</td>
-                            <td></td>
-                            <td></td>
+                            <td>5</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -182,14 +139,37 @@
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>사람4</td>
-                            <td></td>
-                            <td></td>
+                            <td>4</td>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
                     </table>
                     <div class="admin_Paging">
                         <a href="#">이전</a>

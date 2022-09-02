@@ -11,11 +11,12 @@
     line-height: 4vh;
     list-style: none;
     margin-top: 3vh;
+    border-radius: 5px;
     /* border: 1px solid blue; */
 }
-.adminList > li:hover {
+/* .adminList > li:hover {
     background-color: rgb(241, 132, 92);
-}
+} */
 .adminList > li > a {
     height: 4vh;
     display: block;
@@ -28,21 +29,31 @@
 /* 상단 관리자페이지 카테고리 타이틀영역 */
 .adminTitle {
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 1vh 0 1vh 15px;
+    margin-bottom: 1vh;
+    padding-left: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
+}
+.removeBtn {
+    height: 25px;
+    border: none;
+    margin-right: 15px;
+    border-radius: 5px;
+    background: rgb(235, 117, 48);
+    cursor: pointer;
 }
 
-
-/* 메인 회원관리 수치 표시영역 */
+/* 회원관리 수치 표시영역 */
 .adminT {
     height: 55vh;
     padding: 15px;
     /* border: solid 3px rgb(77, 241, 44); */
     
 }
-.adminCbtn {
+.adminCbtn, .admin_RepBtn, .admin_AskBtn {
     width: 90px;
     height: 35px;
     border: none;
@@ -51,7 +62,7 @@
     background: rgb(235, 117, 48);
     cursor: pointer;
 }
-.Figure {
+.Figure, .Rep_Figure, .Ask_Figure {
     width: 50px;
     height: 35px;
     border: none;
@@ -89,8 +100,9 @@
     color: black;
     border: 1px solid grey;
 }
-/* .admin_Paging > a:hover {
-    background: rgb(241, 132, 92);
-} */
+
+/* 신고관리 영역  */
 
 
+
+/* 게시판관리 영역 */
