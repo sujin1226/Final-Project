@@ -1,5 +1,5 @@
 :root{
-    --main-border: 2px solid gainsboro; /* 메인 블랙칼라 */
+    --main-border: 1px solid gainsboro; /* 메인 블랙칼라 */
 }
 
 *{
@@ -40,5 +40,15 @@ select{
     padding: 5px 10px;
     border: var(--main-border);
 }
-
-
+.btn button{
+    background-color: #0078FF;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.join{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
