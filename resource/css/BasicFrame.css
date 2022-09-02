@@ -12,6 +12,8 @@
 .container{
   padding-left: 10%;
   padding-right: 10%;
+
+  padding-top: 5%;
 }
 /* =============헤더 전체틀============ */
 .common_header{
@@ -19,12 +21,17 @@
     height: 8vh;
     min-width: 1280px;
 
+    /* fixed 주석 처리하면 원래상태로 바뀜 */
+    position: fixed;
+    z-index: 100;
     
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 2px #ccc;
+    /* border: solid 2px #ccc; */
+
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
 }
 
 
@@ -93,58 +100,124 @@
 }
 
 
-/* 유저 드롭다운 */
-.user_dropdown{
-    display:block;
-    border: solid 2px var(--main-text-color);
-    /* background-color: var(--main-black-color); */
-    color: var(--main-text-color);
-
-    position:absolute;
-    z-index: 100;
-    width:100px;
-    top:75px;
-    list-style: none;
-    padding: 10px 0 10px 0;
-    text-align: center;
-}
-
-.user_dropdown > li {
-    margin: 10px 0;
-}
-
-
 /* 마이페이지, 알람기능 */
+
+
 .user,.alarm{
     width: 50%;
     height: 100%;
-    /* background-color: var(--main-black-color); */
-    border: solid 2px var(--main-text-color);
 
-    display: flex;
     justify-content: center;
     align-items: center;
+
     position: relative;
+    /* border: solid 2px red;   */
+
 }
 
-.dropList{
-    position: absolute;
-    width: 100px;
+.user>div,.alarm>div{
+    width: 50px;
     height: 50px;
-    /* border: 3px solid blue; */
+    /* background-color: red; */
+   /* background-image: url(/resource/img/alarm.png); */
+    border: solid 2px red;  
+    /* border-radius: 50%; */
+   
+    position: absolute;
+    
+    top: 10px;
+    left: 20px;
+    
 
-    top: 10%;
-    right: 15%;
+    
+    
+}
+/* 헤더 유저 드롭다운 */
+.user>ul{   
+    border: solid 2px #ccc;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin: 0; padding: 0;
+
+    width: 200px;
+    height: 300px;
+
+    position: absolute;
     z-index: 100;
+    top: 75px;
+    right: -98px;
+
+    display: none;
 }
 
-/* 아이콘 사이즈 조절부 */
-.uil-user-circle,.uil-bell{
-    font-size: 35px;
-    color: var(--main-black-color);
- }
 
 
+.user>ul>li,.alarm>ul>li{   
+    /* border: solid 2px red;   */
+
+    width: 100%;
+    height: 20%;
+
+    list-style-type: none;
+    line-height: 40px;
+    padding-left: 10px;
+ 
+}
+/* 헤더 알람 드롭다운 */
+.alarm>ul{   
+    border: solid 2px #ccc;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin: 0; padding: 0;
+
+    width: 400px;
+    height: 300px;
+
+    position: absolute;
+    z-index: 100;
+    top: 75px;
+    right: 0px;
+
+    display: none;
+    overflow-y: scroll;
+}
+
+.alarm>ul>li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.alarm>ul>li>span:nth-child(1){
+    /* border: 1px solid blue; */
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    /* text-align: center; */
+    overflow: hidden;
+
+    line-height: 30px;
+}
+.alarm>ul>li>span:nth-child(2){
+    border: 1px solid #ccc;
+    background-color: pink;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;   
+    
+    font-size: 10px;
+    text-align: center;
+
+    padding: 0;
+    line-height: 30px;
+}
+
+
+
+/* ================================================ */
 
 /* 메인 섹션(조원 작업존) */
 .common_section{
@@ -153,7 +226,7 @@
     background-color: white;
     min-width: 1280px;
 
-    /* border: 3px solid red; */
+    border: 3px solid red;
     
 
     position: relative;
@@ -164,9 +237,10 @@
 /* 왼쪽 사이드 */
 .sideLeft{
     background-color: white;
-    /* border: solid 2px var(--ex-border-color); */
+    border: solid 2px var(--ex-border-color);
     height: 150vh;
     width: 15%;
+    
     
     border-radius: 10px;
 }
@@ -176,7 +250,7 @@
     background-color: white;
     border: solid 2px var(--ex-border-color);
     height: 150vh;
-    height: 90%;
+    height: 100%;
     width: 70%;
 
 }
@@ -184,7 +258,7 @@
 /* 오른쪽 사이드 */
 .sideRight{
     background-color: white;
-    /* border: solid 2px var(--ex-border-color); */
+    border: solid 2px var(--ex-border-color);
     /* height: 150vh; */
     width: 15%;
 }
@@ -230,56 +304,6 @@
 /* ================================= */
 /* 사이드바 */
 
-
-/* 사이드바 리스트 */
-.myList{
-    width: 100%;
-    height: 100%;
-    border: solid 2px #ccc;
-}
-
-.myList>ul{
-    margin: 0; padding: 0;
-    
-    /* align-items: center; */
-}
-.myList>ul>li{
-    width: 100%;
-    height: 10vh;
-    /* border: solid 3px var(--ex-border-color); */
-
-    list-style-type: none;
-    text-align: center;
-    /* line-height: 155px; */
-
-
-    font-size: 15px;
-
-}
-/* 프로필 이미지 부분 사이즈 조정 */
-.myList>ul>li:nth-child(1){
-    height: 30vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    flex-wrap: nowrap;
-}
-/* 마이페이지 리스트와의 간격조절 */
-.myList>ul>li:nth-child(2){
-    margin-bottom: 50px;
-}
-
-
-.myList>ul>li:nth-child(1)>div{
-   width: 200px;
-   height: 200px;
-
-
-   background-image: url(/resource/img/pepe.png);
-   border-radius: 50%;
-}
 
 
 /* ==============테스트존=================== */
