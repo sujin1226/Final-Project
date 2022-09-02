@@ -1,37 +1,10 @@
 
+
+
 // header center 카테고리 호버시 함수
-let header_text = document.querySelectorAll(".header_menu>li>a");
-textHover(header_text);
+let myPage_side_text = document.querySelectorAll(".myli");
+textHover(myPage_side_text);
 
-// header 마이페이지 클릭시 함수
-let myPage = document.querySelector(".user>div"); //마이페이지 동그라미
-let myPage_drop = document.querySelector(".user>ul"); //마이페이지 동그라미 드롭다운 요소
-
-// header 알람 클릭시 함수
-let myAlarm = document.querySelector(".alarm>div"); //알람 동그라미
-let myAlarm_drop = document.querySelector(".alarm>ul"); //알람 동그라미 드롭다운 요소
-
-
-
-// 플래그 스위치 모읍
-let flagMyPage = false;  //마이페이지 동그라미 스위치
-let flagMyAlarm = false;  //알람 동그라미 스위치
-
-
-
-// ! ==============구현부========================
-dropDown(myPage,myPage_drop,flagMyPage); // 마이페이지 드롭다운 이벤트
-dropDown(myAlarm,myAlarm_drop,flagMyAlarm); // 알람 드롭다운 이벤트
-
-
-
-
-
-
-
-// header 마이페이지 내의 li태그 호버시 색깔변경
-let myPage_liTag = document.querySelectorAll(".user>ul>li"); //마이페이지 동그라미 드롭다운 요소
-textHover(myPage_liTag);
 
 
 
@@ -44,7 +17,7 @@ textHover(myPage_liTag);
  * 호버시 진행될 이벤트를 (param)안에 넣어주면 알아서 적용됨
  * @example textHover(param)
  */
-function textHover(param){
+ function textHover(param){
     for(let i=0; i<param.length; i++){
         param[i].addEventListener('mouseover',function(){
             textColor(param[i],"rgba(248,58,37,1)");
