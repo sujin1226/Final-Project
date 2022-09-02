@@ -1,0 +1,15 @@
+/*08-29 HIKARI 제작*/
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url(/resource/font/GmarketSansTTF/GmarketSansTTFMedium.ttf) format('truetype');
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'GmarketSans'; 
+    /* background-color: var(--colorBlack) */
+
+}

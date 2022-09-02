@@ -110,7 +110,7 @@
 }
 .PayBtn {
     padding: 10px 30px;
-    background-color: red;
+    background: rgb(235, 117, 48);
     color: white;
     font-size: 20px;
     border: none;
