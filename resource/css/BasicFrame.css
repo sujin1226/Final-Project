@@ -16,8 +16,8 @@ a{
 
 
 .container{
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding: 0 10%; */
+  min-width: 1280px;
 }
 /* =============헤더 전체틀============ */
 .common_header{
@@ -29,7 +29,7 @@ a{
     display: flex;
     align-items: center;
     border: solid 2px var(--ex-border-color);
-    background-color: rgb(29,32,34);
+    background-color: var(--main-black-color);
 }
 /* 헤더 왼쪽 */
 .common_header_left{
@@ -160,7 +160,7 @@ input:focus{
     background-color: var(--main-white-color);
     min-width: 1280px;
 
-    /* padding: 0 10%; */
+    padding: 0 10%;
 
     position: relative;
     display: flex;
@@ -169,7 +169,7 @@ input:focus{
 
 /* 왼쪽 사이드 */
 .sideLeft{
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     border: solid 2px var(--ex-border-color);
     height: 150vh;
     width: 15%;
@@ -178,7 +178,7 @@ input:focus{
 
 /* 메인섹션 */
 .main{
-    background-color: whitesmoke;
+    background-color: var(--main-white-color);
     border: solid 2px var(--ex-border-color);
     height: 150vh;
     width: 70%;
@@ -187,7 +187,7 @@ input:focus{
 
 /* 오른쪽 사이드 */
 .sideRight{
-    background-color: whitesmoke;
+    background-color: var(--main-white-color);
     border: solid 2px var(--ex-border-color);
     height: 150vh;
     width: 15%;
