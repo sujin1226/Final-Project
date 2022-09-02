@@ -1,15 +1,12 @@
 /*08-29 HIKARI 제작*/
 
 @font-face {
-    font-family: 'GmarketSans';
-    src: url(/resource/font/GmarketSansTTF/GmarketSansTTFMedium.ttf) format('truetype');
+    font-family: 'NanumSquareR';
+    src: url(/resource/font/NanumSquareR.ttf) format('truetype');
 }
-
-
 
 * {
     box-sizing: border-box;
-    font-family: 'GmarketSans'; 
-    /* background-color: var(--colorBlack) */
-
+    font-family: 'NanumSquareR';
+    font-size: 16.5px;
 }
