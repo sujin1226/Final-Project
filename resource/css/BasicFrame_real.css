@@ -1,0 +1,285 @@
+*{ box-sizing: border-box;  margin: 0px; }
+
+:root{
+    --main-black-color: rgb(29,32,34); /* 메인 블랙칼라 */
+    --main-white-color:rgb(247,247,247);  /* 메인 화이트칼라 */
+    --main-red-color: rgb(238,43,42);  /* 메인 레드 칼라 */
+    --main-text-color: rgb(247,247,247);
+
+    --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
+}
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+/* =============헤더 전체틀============ */
+.common_header{
+    width: 100%;
+    height: 8vh;
+    min-width: 1280px;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #ccc;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+/* 헤더 왼쪽 */
+.common_header_left{
+    width: 10%;
+    height: 100%;
+    /* border: 2px solid pink; */
+
+    /* color: black; */
+}
+.common_header_left>img{
+    width: 80%;
+    height: 100%;
+
+    object-fit: contain;
+}
+/* 헤더 가운데 */
+.common_header_center{
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid pink; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 헤더 카테고리 */
+.header_menu{
+    display: flex;
+    align-items: center;
+    line-height: 45px;
+    margin: 0; padding: 0;
+}
+.header_menu>li{
+    width: 130px;
+    height: 50px;
+    /* border: 2px solid pink; */
+
+
+    font-size: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.header_menu>li>a{
+    color:rgba(25, 25, 25, 1) ;
+    text-decoration: none;
+}
+
+.header_menu>li>a:hover{
+    color:  rgba(248,58,37,1);
+}
+
+/* 헤더 오른쪽 */
+.common_header_right{
+    width: 10%;
+    height: 100%;
+    /* border: 2px solid pink; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 유저 드롭다운 */
+.user_dropdown{
+    display:block;
+    border: solid 2px var(--main-text-color);
+    /* background-color: var(--main-black-color); */
+    color: var(--main-text-color);
+
+    position:absolute;
+    z-index: 100;
+    width:100px;
+    top:75px;
+    list-style: none;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.user_dropdown > li {
+    margin: 10px 0;
+}
+
+
+/* 마이페이지, 알람기능 */
+.user,.alarm{
+    width: 50%;
+    height: 100%;
+    /* background-color: var(--main-black-color); */
+    border: solid 2px var(--main-text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dropList{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    /* border: 3px solid blue; */
+
+    top: 10%;
+    right: 15%;
+    z-index: 100;
+}
+
+/* 아이콘 사이즈 조절부 */
+.uil-user-circle,.uil-bell{
+    font-size: 35px;
+    color: var(--main-black-color);
+ }
+
+
+
+/* 메인 섹션(조원 작업존) */
+.common_section{
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+    min-width: 1280px;
+
+    /* border: 3px solid red; */
+    
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* 왼쪽 사이드 */
+.sideLeft{
+    background-color: white;
+    /* border: solid 2px var(--ex-border-color); */
+    height: 150vh;
+    width: 15%;
+    
+    border-radius: 10px;
+}
+
+/* 메인섹션 */
+.main{
+    background-color: white;
+    border: solid 2px var(--ex-border-color);
+    height: 150vh;
+    height: 90%;
+    width: 70%;
+
+}
+
+/* 오른쪽 사이드 */
+.sideRight{
+    background-color: white;
+    /* border: solid 2px var(--ex-border-color); */
+    /* height: 150vh; */
+    width: 15%;
+}
+
+/* ====================푸터=================== */
+.common_footer{
+    width: 100%;
+    height: 15vh;
+    min-width: 1280px;
+    border: solid 2px #ccc;
+    background-color: white;
+}
+
+
+/* ==================잡기능 모음집============== */
+/* 2022-08-22 HIKARI */
+/* 상단 스크롤 이동 버튼 */
+.toTop{
+    width: 50px;
+    height: 50px;
+    /* background-color: brown; */
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* 상단 이동하기 버튼 */
+.uil-arrow-circle-up{
+    font-size: 40px;
+}
+
+/* ============================= */
+/* 내 프로필 및 마이페이지 내역  */
+.mySection{
+    width: 100%;
+    height: 150vh; 
+    border: solid 3px var(--ex-border-color);
+
+    display: flex;
+    
+}
+/* ================================= */
+/* 사이드바 */
+
+
+/* 사이드바 리스트 */
+.myList{
+    width: 100%;
+    height: 100%;
+    border: solid 2px #ccc;
+}
+
+.myList>ul{
+    margin: 0; padding: 0;
+    
+    /* align-items: center; */
+}
+.myList>ul>li{
+    width: 100%;
+    height: 10vh;
+    /* border: solid 3px var(--ex-border-color); */
+
+    list-style-type: none;
+    text-align: center;
+    /* line-height: 155px; */
+
+
+    font-size: 15px;
+
+}
+/* 프로필 이미지 부분 사이즈 조정 */
+.myList>ul>li:nth-child(1){
+    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: nowrap;
+}
+/* 마이페이지 리스트와의 간격조절 */
+.myList>ul>li:nth-child(2){
+    margin-bottom: 50px;
+}
+
+
+.myList>ul>li:nth-child(1)>div{
+   width: 200px;
+   height: 200px;
+
+
+   background-image: url(/resource/img/pepe.png);
+   border-radius: 50%;
+}
+
+
+/* ==============테스트존=================== */
