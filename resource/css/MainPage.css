@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-.test {
-    width: 100%;
-}
-
 .main {
     margin: 0 auto;
     
     width: 70%;
-    height: 150vh;
     display: grid;
     grid-template-areas: 
     "first_preview"
@@ -20,33 +15,74 @@
     border: 1px solid red;
 }
 
-#main_hotfix_preview {
-    padding: 10px 20px;
+#main_big_preview {
+    height: 90vh;
     grid-area: first_preview;
+    padding: 3vh;
+    display: grid;
+    grid-template-areas: 
+    "preview";
     border: 1px solid red;
-    
+}
+#big_preview{
+    grid-area: preview;
+    width: 100%;
+    /* border: 1px solid red; */
 }
 
-#main_community_preview{
-    grid-area: second_preview;
+#hotfix_preview_title{
+    width: 100%;
+    height: 15vh;
+    border-radius: 5px;
+    text-align: left;
+    background-color: rgba(25,25,25,.01);
+    box-shadow: 2px 2px rgba(0, 0, 0, .2);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    margin:  0 0 3vh 0;
+}
+.preview_logo {
+    width: 10%;
+    height: 100%;
+    object-fit: contain;
+    display: inline-block;
+    
+}
+#hotfix_preview_title > :nth-child(2) {
+    color: rgba(25,25,25,1);
+    padding: 0 0 0 10px;
+    line-height: 15vh;
+    font-size: 3vh;
+    /* border: 1px solid red; */
+}
+
+#hotfix_preview_content > div{
+    height: 10vh;
     border: 1px solid red;
+    margin: 0 0 1.5vh 0;
+}
+
+
+#main_community_preview{
+    height: 75vh;
+    grid-area: second_preview;
+    padding: 3%;
     display: grid;
     grid-template-areas: 
     "first_comm_preview second_comm_preview";
+    border: 1px solid red;
 }
 
 
 #community_preview_frist {
-    padding: 10px 20px;
+    grid-area: first_comm_preview;
     width: 100%;
     border: 1px solid blue;
-    grid-area: first_comm_preview;
 }
 
 #community_preview_second {
-    padding: 10px 20px;
+    grid-area: second_comm_preview;
     width: 100%;
     border: 1px solid blue;
-    grid-area: second_comm_preview;
 
 }
