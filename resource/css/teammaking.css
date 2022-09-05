@@ -1,5 +1,16 @@
 :root{
     --main-border: 1px solid gainsboro; /* 메인 블랙칼라 */
+
+    --border-color: #e5e4e9;
+    --dark-border-color:#ccc;
+
+    --basic-white-color:white;
+    --basic-gainsboro-color:gainsboro;
+    --basic-gray-color:gray;
+    --basic-black-color:#333;
+    --basic-border-radius:5px;
+
+    --bg-color:#ff9f40;
 }
 
 *{
@@ -11,12 +22,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+
+    background-image: linear-gradient(red, orange);
 }
 .container{
     /* 합칠 때 빼기 */
     width: 40%;
-    height: 50%;
-    box-shadow: gainsboro 5px 5px 30px 5px;
+    /* height: 50%; */
+    background-color: var(--basic-white-color);
+
+    animation-name: opacity;
+    animation-duration: 3s;
 }
 .team{
     padding: 10px 30px;
@@ -33,7 +50,7 @@ input[id="teaminput"]{
     border: var(--main-border);
 }
 .img{
-    width: 10%;
+    width: 30%;
     border: var(--main-border);
 }
 select{
@@ -41,14 +58,25 @@ select{
     border: var(--main-border);
 }
 .btn button{
-    background-color: #0078FF;
+    background-color: var(--bg-color);
     color: whitesmoke;
     border: none;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 .join{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
