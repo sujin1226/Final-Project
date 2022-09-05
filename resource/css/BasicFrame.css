@@ -151,8 +151,6 @@
     display: none;
 }
 
-
-
 .user>ul>li,.alarm>ul>li{   
     /* border: solid 2px red;   */
 
@@ -216,7 +214,6 @@
 }
 
 
-
 /* ================================================ */
 
 /* 메인 섹션(조원 작업존) */
@@ -233,17 +230,15 @@
     display: flex;
     justify-content: center;
 }
-
+/* 마이페이지에서만 활용 */
 /* 왼쪽 사이드 */
-.sideLeft{
+/* .sideLeft{
     background-color: white;
     border: solid 2px var(--ex-border-color);
     height: 150vh;
     width: 15%;
-    
-    
     border-radius: 10px;
-}
+} */
 
 /* 메인섹션 */
 .main{
