@@ -1,8 +1,10 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
+
+/* ################################# 메인섹션관리  ################################# */
 
 .main {
     margin: 0 auto;
@@ -12,34 +14,74 @@
     grid-template-areas: 
     "first_preview"
     "second_preview";
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #main_big_preview {
-    height: 90vh;
+    height: 60vh;
     grid-area: first_preview;
     padding: 3vh;
     display: grid;
     grid-template-areas: 
     "preview";
-    border: 1px solid red;
-}
-#big_preview{
-    grid-area: preview;
-    width: 100%;
     /* border: 1px solid red; */
+}
+
+
+/* ################################# 슬라이드부 ################################# */
+.swiper {
+    width: 100%;
+    height: 100%;
+    grid-area: preview;
+    /* border: 1px solid green; */
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+/* ################################# 생략  ################################# */
+/* 슬라이드 효과 넣으면서 메인창 정리 */
+
+/* #big_preview{
+    grid-area: preview2;
+    width: 100%;
+    height: 50%;
+    border: 1px solid purple;
 }
 
 #hotfix_preview_title{
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     border-radius: 5px;
     text-align: left;
-    background-color: rgba(25,25,25,.01);
+    background-color: rgba(248, 58, 37, 0.8);
     box-shadow: 2px 2px rgba(0, 0, 0, .2);
-    color: rgba(255, 255, 255, 1);
     display: flex;
-    margin:  0 0 3vh 0;
+    margin:  3vh 0 3vh 0;
 }
 .preview_logo {
     width: 10%;
@@ -49,40 +91,82 @@
     
 }
 #hotfix_preview_title > :nth-child(2) {
-    color: rgba(25,25,25,1);
+    color: rgba(255,255,255,1);
     padding: 0 0 0 10px;
-    line-height: 15vh;
+    line-height: 10vh;
     font-size: 3vh;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 #hotfix_preview_content > div{
     height: 10vh;
     border: 1px solid red;
     margin: 0 0 1.5vh 0;
-}
+} */
 
+/* ################################# 게시판 관련 프리뷰 ################################# */
 
 #main_community_preview{
+    /* width: 100%; */
     height: 75vh;
     grid-area: second_preview;
-    padding: 3%;
+    padding: 3vh;
     display: grid;
     grid-template-areas: 
     "first_comm_preview second_comm_preview";
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
 #community_preview_frist {
     grid-area: first_comm_preview;
     width: 100%;
-    border: 1px solid blue;
+    height: 100%;
+    /* border: 1px solid blue; */
+    padding: 1vh .5vw 1vh 0;
+}
+#comm_fir_preview_title{
+    width: 100%;
+    height: 15%;
+    padding: 1vh 1vw;
+    /* border: 1px solid green; */
+    background-color: rgba(255, 86, 30, .8);
+    font-size: 1.3em;
+    line-height: 8.5vh;
+    color: rgba(255,255,255,1);
+    border-radius: 5px;
+}
+
+#comm_fir_preview_content{
+    width: 100%;
+    height: 85%;
+    padding: 1vh 1vw;
+    /* border: 1px solid green; */
 }
 
 #community_preview_second {
     grid-area: second_comm_preview;
     width: 100%;
-    border: 1px solid blue;
-
+    height: 100%;
+    /* border: 1px solid blue; */
+    padding: 1vh 0 1vh .5vw;
 }
+#comm_sec_preview_title{
+    width: 100%;
+    height: 15%;
+    padding: 1vh 1vw;
+    /* border: 1px solid green; */
+    background-color: rgba(255, 86, 30, .8);
+    font-size: 1.3em;
+    line-height: 8.5vh;
+    color: rgba(255,255,255,1);
+    border-radius: 5px;
+}
+
+#comm_sec_preview_content{
+    width: 100%;
+    height: 85%;
+    padding: 1vh 1vw;
+    /* border: 1px solid green; */
+}
+
