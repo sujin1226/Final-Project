@@ -30,7 +30,7 @@
                 <li><a href="">랭킹</a></li>
                 <li><a href="">커뮤니티</a></li>
             </ul>
-            
+
         </div>
         <!-- 헤더 섹션 오른쪽 -->
         <div class="common_header_right">
@@ -46,23 +46,26 @@
             </div>
             <!-- 알림페이지 -->
             <div class="alarm">
-                
+
                 <div><i class="uil uil-bell"></i></div>
-                <ul>        
+                <ul>
                     <li><span>정산이 완료되었어요!</span><span>방금</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i
+                                class="uil uil-angle-right-b"></i></span></li>
                     <li><span>충전이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
                     <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
                     <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
                     <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    
+
                 </ul>
             </div>
         </div>
 
-       
+
     </div>
 
     <div class="container">
@@ -84,15 +87,15 @@
                   여기서부터 작업하고 최종파일에 복붙하기 -->
 
                 <div class="adminTitle">
-                    <h2>1:1 문의</h2>
-                    <button class="setBtn">선택완료</button>
+                    <h2>게시판관리</h2>
+                    <div class="adminNav">
+                        <button class="removeBtn">선택삭제</button>
+                        <button class="setBtn">공지등록</button>
+                    </div>
                 </div>
                 <div class="adminT">
-                    <button class="admin_AskBtn">전체목록</button>
-                    <button class="admin_AskBtn">문의건수</button><button class="Ask_Figure"> 7건</button>
-                    <button class="admin_AskBtn">미처리</button><button class="Ask_Figure"> 2건</button>
-                    <button class="admin_AskBtn">처리중</button><button class="Ask_Figure"> 4건</button>
-                    <button class="admin_AskBtn">처리완료</button><button class="Ask_Figure"> 1건</button>
+                    <button class="admin_Boardbtn"><a href="/view/admin/admin_BoardMng.html">공지사항</a></button>
+                    <!-- <button class="admin_Boardbtn"><a href="/view/admin/admin_BoardCus.html">회원 게시글</a></button> -->
                     <br>
                     <br>
                     <table border="1" class="admin_Customer">
@@ -101,18 +104,18 @@
                             <td>No.</td>
                             <td>구분</td>
                             <td>제목</td>
-                            <td>아이디</td>
-                            <td>처리여부</td>
+                            <td>등록자</td>
                             <td>등록일</td>
+                            <td>조회</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
                             <td>10</td>
-                            <td>test</td>
-                            <td><a href="">인출문의&nbsp;</a></td>
-                            <td>rrrrr</td>
-                            <td>처리완료</td>
-                            <td>2022-09-02</td>
+                            <td>긴급</td>
+                            <td><a href="">서버점검안내</a></td>
+                            <td>운영자1</td>
+                            <td>2022-09-04</td>
+                            <td>20</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
@@ -229,7 +232,7 @@
 
 </body>
 
-<<script src="/resource/js/BasicFrame.js"></script>
+<script src="/resource/js/BasicFrame.js"></script>
 <script src="/resource/js/admin.js"></script>
 
 </html>

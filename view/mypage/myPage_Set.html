@@ -1,83 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resource/css/myPage_Set.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/resource/css/myPage_set.css">
+    <link rel="stylesheet" href="/resource/css/global.css">
+    <!-- 유니콘 아이콘 사이트 -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>HotFix</title>
 </head>
+
 <body>
-        <!-- 
-            *22-08-22 HIKARI 정보수정 페이지
-         -->
-        <!-- 내 활동 내역 -->
-            <div class="myPage_Set">
-                <!-- 프로필 수정부분 -->
-                <div class="myPage_Set_Profile">
-                    <div class="set_image"> 
-                        <div class="upload">    
-                            여기에 프로필 사진나옴
-                        </div>
-                        <div class="uploadBtn">
-                            <input type="button" value="재업로드">
-                            <input type="button" value="이미지 삭제">
-                        </div>
-                    </div>
-                    <div class="set_introduce">
-                        <div class="set_Name">
-                            <input type="button" value="수정하기">
-                        </div>
-                        <div class="set_Text">
-                            
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 소셜사이트 수정부분 -->
-                <div class="myPage_Set_Contact">          
-                    <div class="contact_Text">   
-                        <div>소셜정보 수정하기</div>
-                        <div>123</div>
-                    </div>
-                    <div class="correct">
-                        <input type="button" value="수정">
-                    </div>
-                </div>
-                <!-- 소셜사이트 수정부분 -->
-                <div class="myPage_Set_Contact">          
-                    <div class="contact_Text">   
-                        <div>소셜정보 수정하기</div>
-                        <div>123</div>
-                    </div>
-                    <div class="correct">
-                        <input type="button" value="수정">
-                    </div>
-                </div>
-                <!-- 소셜사이트 수정부분 -->
-                <div class="myPage_Set_Contact">          
-                    <div class="contact_Text">   
-                        <div>소셜정보 수정하기</div>
-                        <div>123</div>
-                    </div>
-                    <div class="correct">
-                        <input type="button" value="수정">
-                    </div>
-                </div>
-                <!-- 소셜사이트 수정부분 -->
-                <div class="myPage_Set_Contact">          
-                    <div class="contact_Text">   
-                        <div>소셜정보 수정하기</div>
-                        <div>123</div>
-                    </div>
-                    <div class="correct">
-                        <input type="button" value="수정">
-                    </div>
-                </div>
+    <!-- ======================== 헤더 ======================= -->
+    <div class="common_header">
+        <!-- 헤더 섹션 왼쪽 -->
+        <div class="common_header_left">
+            <img src="/resource/img/hoxfix_1.png" alt="">
+        </div>
+        <!-- 헤더 섹션 가운데 -->
+        <div class="common_header_center">
+            <!-- 카테고리 -->
+            <ul class="header_menu">
+                <li><a href="">HOTFIX</a></li>
+                <li><a href="">팀페이지</a></li>
+                <li><a href="">랭킹</a></li>
+                <li><a href="">커뮤니티</a></li>
+            </ul>
 
-             
-
-    
+        </div>
+        <!-- 헤더 섹션 오른쪽 -->
+        <div class="common_header_right">
+            <!-- 마이페이지 -->
+            <div class="user">
+                <div></div>
+                <ul>
+                    <li>마이페이지</li>
+                    <li>충전하기</li>
+                    <li>관리자 페이지</li>
+                    <li>로그아웃</li>
+                </ul>
             </div>
+            <!-- 알림페이지 -->
+            <div class="alarm">
+
+                <div><i class="uil uil-bell"></i></div>
+                <ul>
+                    <li><span>정산이 완료되었어요!</span><span>방금</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i
+                                class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>충전이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <!-- ======================== 작업 섹션 ======================= -->
+        <div class="common_section">
+            <!-- 왼쪽 사이드 -->
+            <div class="sideLeft">
+                <div class="myList">
+                    <ul>
+                        <li>
+                            <div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <p>잉잉잉의</p>
+                            <p>#9877</p>
+                        </li>
+                        <li class="myli">마이페이지</li>
+                        <li class="myli">정보 수정</li>
+                        <li class="myli">나의 작성글</li>
+                        <li class="myli">결제 및 정산</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 메인섹션 -->
+            <div class="main">
+                <!-- 
+                *22-08-22 HIKARI
+                *** 테스트시  <div class="main"> 하고 테스트 할 것
+            -->
+                <!-- ==============작업공간============== -->
+                <!-- 마이 페이지부분 -->
+
+                <div class="myPage">
+                
+                    <!-- 프로필사진 -->
+                    <p class="mypage_title">프로필사진 변경 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>현재 나의 프로필사진</div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+                    <!-- 닉네임 -->
+                    <p class="mypage_title">닉네임 변경 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>5000 포인트</div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+                    <!-- 자기소개 -->
+                    <p class="mypage_title">자기소개 수정 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>국비학원 다니고 있습니다</div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+
+
+                    
+                    <!-- 컨택트 -->
+                    <p class="mypage_title">소셜정보</p>
+                    <div class="contact">
+                        <div>
+                            <p>github</p>
+                            <p>home</p>
+                            <p>velog</p>
+                        </div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+                    <!-- 커미션 -->
+                    <p class="mypage_title">님의 커미션 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>5000 포인트</div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+                    <!-- 계좌정보 -->
+                    <p class="mypage_title">계좌정보 변경 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>신한은행 110-427-341899</div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+                    <!-- 알림설정 -->
+                    <p class="mypage_title">알림 설정 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>모든 알림끄기</div>
+                        <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+                    <!-- 탈퇴 -->
+                    <p class="mypage_title">탈퇴하기 <i class="uil uil-question-circle"></i></p>
+                    <div class="comition_1">
+                        <div>탈퇴시 회원의 모든정보가 삭제되며, 출금 처리를 끝내주셔아합니다</div>
+                        <div>기부하고 탈퇴하기 <i class="uil uil-angle-right-b"></i></div>
+                    </div>
+
+                    
+
+                    
+
+                    
+        
+
+
+                </div>
+
+                <!-- ==============작업공간============== -->
+            </div>
+            <!-- 오른쪽 사이드 -->
+            <div class="sideRight">
+
+            </div>
+
+            <!-- 상단 스크롤 이동 -->
+            <div class="toTop"><i class="uil uil-arrow-circle-up"></i></div>
+
+        </div>
+
+
+
+    </div>
+    <!-- 푸터 -->
+    <div class="common_footer">푸터임다</div>
+
 </body>
+
+<script src="/resource/js/BasicFrame.js"></script>
+<script src="/resource/js/mypage_new_real.js"></script>
+
+
 </html>

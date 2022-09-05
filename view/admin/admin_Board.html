@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resource/css/BasicFrame.css">
+    <!-- <link rel="stylesheet" href="/resource/css/BasicFrame.css"> -->
     <link rel="stylesheet" href="/resource/css/global.css">
     <link rel="stylesheet" href="/resource/css/admin.css">
     <!-- 유니콘 아이콘 사이트 -->
@@ -19,7 +19,7 @@
     <div class="common_header">
         <!-- 헤더 섹션 왼쪽 -->
         <div class="common_header_left">
-            <img src="/resource/img/HOT.png" alt="">
+            <img src="/resource/img/hoxfix_1.png" alt="">
         </div>
         <!-- 헤더 섹션 가운데 -->
         <div class="common_header_center">
@@ -36,17 +36,35 @@
         <div class="common_header_right">
             <!-- 마이페이지 -->
             <div class="user">
-                <i class="uil uil-user-circle"></i>
-
+                <div></div>
+                <ul>
+                    <li>마이페이지</li>
+                    <li>충전하기</li>
+                    <li>관리자 페이지</li>
+                    <li>로그아웃</li>
+                </ul>
             </div>
             <!-- 알림페이지 -->
             <div class="alarm">
-                <i class="uil uil-bell"></i>
+
+                <div><i class="uil uil-bell"></i></div>
+                <ul>
+                    <li><span>정산이 완료되었어요!</span><span>방금</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i
+                                class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>충전이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+
+                </ul>
             </div>
         </div>
-        <div class="dropList">
 
-        </div>
 
     </div>
 
@@ -70,126 +88,117 @@
 
                 <div class="adminTitle">
                     <h2>게시판관리</h2>
-                    <button class="removeBtn">선택삭제</button>
+                    <div class="adminNav">
+                        <button class="removeBtn">선택삭제</button>
+                        <button class="setBtn">공지등록</button>
+                    </div>
                 </div>
                 <div class="adminT">
-                    <button class="adminCbtn">전체목록</button>
-                    <button class="adminCbtn">총회원수</button><button class="Figure"> 60명</button>
-                    <button class="adminCbtn">차단</button><button class="Figure"> 3명</button>
-                    <button class="adminCbtn">탈퇴</button><button class="Figure"> 5명</button>
+                    <button class="admin_Boardbtn"><a href="/view/admin/admin_BoardMng.html">공지사항</a></button>
+                    <button class="admin_Boardbtn"><a href="/view/admin/admin_BoardMem.html">회원 게시글</a></button>
                     <br>
                     <br>
                     <table border="1" class="admin_Customer">
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>이름</td>
-                            <td>아이디</td>
-                            <td>닉네임</td>
-                            <td>이메일</td>
-                            <td>핸드폰번호</td>
-                            <td>가입일</td>
-                            <td>컬럼명</td>
+                            <td>No.</td>
+                            <td>구분</td>
+                            <td>제목</td>
+                            <td>등록자</td>
+                            <td>등록일</td>
+                            <td>조회</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>조준모</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>10</td>
+                            <td>긴급</td>
+                            <td><a href="">서버점검안내</a></td>
+                            <td>운영자1</td>
+                            <td>2022-09-04</td>
+                            <td>20</td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>양광모</td>
+                            <td>9</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><a href=""></a></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>서승혁</td>
+                            <td>8</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td>김수진</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><a href=""></a></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>김수근</td>
+                            <td>7</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td>김양희</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><a href=""></a></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>사람1</td>
+                            <td>6</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="" id=""></td>
-                            <td>사람2</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><a href=""></a></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>사람3</td>
+                            <td>5</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><a href=""></a></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
                         <tr>
                             <td><input type="checkbox" name="" id=""></td>
-                            <td>사람4</td>
+                            <td>4</td>
                             <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><a href=""></a></td>
                             <td></td>
                             <td></td>
                             <td></td>
                         </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>3</td>
+                            <td></td>
+                            <td><a href=""></a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>2</td>
+                            <td></td>
+                            <td><a href=""></a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>1</td>
+                            <td></td>
+                            <td><a href=""></a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
                     </table>
                     <div class="admin_Paging">
                         <a href="#">이전</a>
@@ -223,7 +232,7 @@
 
 </body>
 
-<script src="../resource/js/BasicFrame.js"></script>
+<script src="/resource/js/BasicFrame.js"></script>
 <script src="/resource/js/admin.js"></script>
 
 </html>
