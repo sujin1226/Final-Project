@@ -8,21 +8,28 @@
     <link rel="stylesheet" href="/resource/css/BasicFrame.css">
     <link rel="stylesheet" href="/resource/css/myPage.css">
     <link rel="stylesheet" href="/resource/css/global.css">
-    <link rel="stylesheet" href="/resource/css/teamlist.css">
-    <!-- 유니콘 아이콘 사이트 -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <!-- paging -->
-    <link rel='stylesheet' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.css'>
+
+   <!-- 팀목록 css -->
+   <link rel="stylesheet" href="/resource/css/teamlist.css">
+   <!-- 팀정보 modal css -->
+   <link rel="stylesheet" href="/resource/css/teammodal2.css">
+   <!-- 유니콘 아이콘 사이트 -->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <!-- 폰트어썸 아이콘 사이트 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <!-- paging -->
+   <link rel='stylesheet' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.css'>
     <title>HotFix</title>
 </head>
 
 <body>
-<!-- ======================== 헤더 ======================= -->
+
+     <!-- ======================== 헤더 ======================= -->
     <div class="common_header">
         <!-- 헤더 섹션 왼쪽 -->
         <div class="common_header_left">
-            <img src="/resource/img/Hofix2.png" alt="">
+            <img src="/resource/img/hoxfix_1.png" alt="">
         </div>
         <!-- 헤더 섹션 가운데 -->
         <div class="common_header_center">
@@ -39,45 +46,39 @@
         <div class="common_header_right">
             <!-- 마이페이지 -->
             <div class="user">
-                <i class="uil uil-user-circle"></i>
-                
+                <div></div>
+                <ul>
+                    <li>마이페이지</li>
+                    <li>충전하기</li>
+                    <li>관리자 페이지</li>
+                    <li>로그아웃</li>
+                </ul>
             </div>
             <!-- 알림페이지 -->
             <div class="alarm">
-                <i class="uil uil-bell"></i>
+                
+                <div><i class="uil uil-bell"></i></div>
+                <ul>        
+                    <li><span>정산이 완료되었어요!</span><span>방금</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>충전이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    
+                </ul>
             </div>
         </div>
-        <div class="dropList">
-            
-        </div>
-    
+
+       
     </div>
 
     <div class="container">
     <!-- ======================== 작업 섹션 ======================= -->
     <div class="common_section">
-        <!-- 왼쪽 사이드 -->
-        <div class="sideLeft">
-            <!-- <div class="myList">
-                <ul>
-                    <li>
-                        <div>
-                            
-                        </div>
-                    </li>
-                    <li> -->
-                        <!-- 닉네임 -->
-                        <!-- <p>잉잉잉의</p> -->
-                        <!-- 회원 고유번호 -->
-                        <!-- <p>#9877</p>
-                    </li>
-                    <li>마이페이지</li>
-                    <li>정보 수정</li>
-                    <li>나의 작성글</li>
-                    <li>결제 및 정산</li> 
-                </ul>
-            </div> -->
-        </div>
+
         <!-- 메인섹션 -->
         <div class="main">
             <!-- 
@@ -86,211 +87,211 @@
             -->
             <!-- ==============작업공간============== -->
             <div class="teamlistsearch">
-                    <div class="type">
-                        <!-- 클릭하면 filter기능 -->
-                        <div><a href="">전체</a></div>
-                        <div><a href="">최신순</a></div>
+                <div class="type">
+                    <!-- 클릭하면 filter기능 -->
+                    <div><a href="">전체</a></div>
+                    <div><a href="">최신순</a></div>
+                </div>
+                <div class="search">
+                    <div class="search-box">
+                        <form action="." method="post">
+                          <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
+                          <!-- 클릭 시 검색되는 기능 -->
+                          <i class="uil uil-search"></i>
+                        </form>
                     </div>
-                    <div class="search">
-                        <div class="search-box">
-                            <form action="." method="post">
-                              <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
-                              <!-- 클릭 시 검색되는 기능 -->
-                              <i class="uil uil-search"></i>
-                            </form>
-                        </div>
-                        <div class="teammakingbtn">
-                            <a href="teammaking.html"><button>팀만들기</button></a>
-                        </div>
+                    <div class="teammakingbtn">
+                        <a href="teammaking.html" target="_blank"><button>팀만들기</button></a>
                     </div>
-                <!-- </div> -->
+                </div>
+            
+        </div>
+    
+        <!-- 몇박스 view할지는 아직 미정 / foreach로 반복되는 거 요약할 것 -->
+        <div class="teamlistbox">
+            <div class="img">
+                <img src="/resource/img/pIiRs.jpg" alt="">
             </div>
-        
-            <!-- 몇박스 view할지는 아직 미정 / foreach로 반복되는 거 요약할 것 -->
-            <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
+            <div class="teamlistboxleft">
+                <div class="teamtitle">team Name</div>
+                <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                <div class="languagetag">
+                    <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                    <button type="button" class="tagbtn"><a href="">DB</a></button>
+                    <button type="button" class="tagbtn"><a href="">JS</a></button>
                 </div>
-                <div class="teamlistboxleft">
-                    <div class="teamtitle">team Name</div>
-                    <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                    <div class="languagetag">
-                        <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                        <button type="button" class="tagbtn"><a href="">DB</a></button>
-                        <button type="button" class="tagbtn"><a href="">JS</a></button>
+                <div class="teamcreationdate">2022-08-22</div>
+           </div>
+           <div class="teamlistboxright">
+                <div class="btndiv">
+                    <button class="join btn">모집 인원 : 1 명</button>
+                </div>
+                <div class="teamicons">
+                    <div class="linkcopy icons">
+                        <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                        <span class="tooltip">Copy</span>
+                        <span class="tooltiptwo">Copied</span>
                     </div>
-                    <div class="teamcreationdate">2022-08-22</div>
-               </div>
-               <div class="teamlistboxright">
-                    <div class="btndiv">
-                        <button class="join btn">모집 인원 : 1 명</button>
-                    </div>
-                    <div class="teamicons">
-                        <div class="linkcopy icons">
-                            <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                            <span class="tooltip">Copy</span>
-                            <span class="tooltiptwo">Copied</span>
-                        </div>
-                    </div>
-               </div>
+                </div>
+           </div>
+        </div>
+    
+        <div class="teamlistbox">
+            <div class="img">
+                <img src="/resource/img/pIiRs.jpg" alt="">
             </div>
-        
-            <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
-                </div>
-                <div class="teamlistboxleft">
-                     <div class="teamtitle">team Name</div>
-                     <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                     <div class="languagetag">
-                         <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                         <button type="button" class="tagbtn"><a href="">DB</a></button>
-                         <button type="button" class="tagbtn"><a href="">JS</a></button>
+            <div class="teamlistboxleft">
+                 <div class="teamtitle">team Name</div>
+                 <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                 <div class="languagetag">
+                     <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                     <button type="button" class="tagbtn"><a href="">DB</a></button>
+                     <button type="button" class="tagbtn"><a href="">JS</a></button>
+                 </div>
+                 <div class="teamcreationdate">2022-08-22</div>
+            </div>
+            <div class="teamlistboxright">
+                 <div class="btndiv">
+                     <button class="joinend btn">모집 인원 : 0명</button>
+                 </div>
+                 <div class="teamicons">
+                     <div class="linkcopy icons">
+                        <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                         <span class="tooltip">Copy</span>
+                         <span class="tooltiptwo">Copied</span>
                      </div>
-                     <div class="teamcreationdate">2022-08-22</div>
-                </div>
-                <div class="teamlistboxright">
-                     <div class="btndiv">
-                         <button class="joinend btn">모집 인원 : 0명</button>
+                 </div>
+            </div>
+         </div>
+    
+         <div class="teamlistbox">
+            <div class="img">
+                <img src="/resource/img/pIiRs.jpg" alt="">
+            </div>
+            <div class="teamlistboxleft">
+                 <div class="teamtitle">team Name</div>
+                 <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                 <div class="languagetag">
+                     <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                     <button type="button" class="tagbtn"><a href="">DB</a></button>
+                     <button type="button" class="tagbtn"><a href="">JS</a></button>
+                 </div>
+                 <div class="teamcreationdate">2022-08-22</div>
+            </div>
+            <div class="teamlistboxright">
+                 <div class="btndiv">
+                     <button class="join btn">모집 인원 : 1 명</button>
+                 </div>
+                 <div class="teamicons">
+                     <div class="linkcopy icons">
+                        <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                         <span class="tooltip">Copy</span>
+                         <span class="tooltiptwo">Copied</span>
                      </div>
-                     <div class="teamicons">
-                         <div class="linkcopy icons">
-                            <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                             <span class="tooltip">Copy</span>
-                             <span class="tooltiptwo">Copied</span>
-                         </div>
+                 </div>
+            </div>
+         </div>
+    
+         <div class="teamlistbox">
+            <div class="img">
+                <img src="/resource/img/pIiRs.jpg" alt="">
+            </div>
+            <div class="teamlistboxleft">
+                 <div class="teamtitle">team Name</div>
+                 <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                 <div class="languagetag">
+                     <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                     <button type="button" class="tagbtn"><a href="">DB</a></button>
+                     <button type="button" class="tagbtn"><a href="">JS</a></button>
+                 </div>
+                 <div class="teamcreationdate">2022-08-22</div>
+            </div>
+            <div class="teamlistboxright">
+                 <div class="btndiv">
+                     <button class="join btn">모집 인원 : 1 명</button>
+                 </div>
+                 <div class="teamicons">
+                     <div class="linkcopy icons">
+                        <ion-icon name="link-outline" class="linkicon"></ion-icon>
+                         <span class="tooltip">Copy</span>
+                         <span class="tooltiptwo">Copied</span>
                      </div>
-                </div>
-             </div>
-        
-             <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
-                </div>
-                <div class="teamlistboxleft">
-                     <div class="teamtitle">team Name</div>
-                     <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                     <div class="languagetag">
-                         <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                         <button type="button" class="tagbtn"><a href="">DB</a></button>
-                         <button type="button" class="tagbtn"><a href="">JS</a></button>
+                 </div>
+            </div>
+         </div>
+    
+         <div class="teamlistbox">
+            <div class="img">
+                <img src="/resource/img/pIiRs.jpg" alt="">
+            </div>
+            <div class="teamlistboxleft">
+                 <div class="teamtitle">team Name</div>
+                 <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                 <div class="languagetag">
+                     <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                     <button type="button" class="tagbtn"><a href="">DB</a></button>
+                     <button type="button" class="tagbtn"><a href="">JS</a></button>
+                 </div>
+                 <div class="teamcreationdate">2022-08-22</div>
+            </div>
+            <div class="teamlistboxright">
+                 <div class="btndiv">
+                     <button class="join btn">모집 인원 : 1 명</button>
+                 </div>
+                 <div class="teamicons">
+                     <div class="linkcopy icons">
+                        <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                         <span class="tooltip">Copy</span>
+                         <span class="tooltiptwo">Copied</span>
                      </div>
-                     <div class="teamcreationdate">2022-08-22</div>
-                </div>
-                <div class="teamlistboxright">
-                     <div class="btndiv">
-                         <button class="join btn">모집 인원 : 1 명</button>
+                 </div>
+            </div>
+         </div>
+    
+         <div class="teamlistbox">
+            <div class="img">
+                <img src="/resource/img/pIiRs.jpg" alt="">
+            </div>
+            <div class="teamlistboxleft">
+                 <div class="teamtitle">team Name</div>
+                 <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                 <div class="languagetag">
+                     <button type="button" class="tagbtn"><a href="">HTML</a></button>
+                     <button type="button" class="tagbtn"><a href="">DB</a></button>
+                     <button type="button" class="tagbtn"><a href="">JS</a></button>
+                 </div>
+                 <div class="teamcreationdate">2022-08-22</div>
+            </div>
+            <div class="teamlistboxright">
+                 <div class="btndiv">
+                     <button class="join btn">모집 인원 : 1 명</button>
+                 </div>
+                 <div class="teamicons">
+                     <div class="linkcopy icons">
+                        <ion-icon name="link-outline" class="md hydrated"></ion-icon>
+                         <span class="tooltip">Copy</span>
+                         <span class="tooltiptwo">Copied</span>
                      </div>
-                     <div class="teamicons">
-                         <div class="linkcopy icons">
-                            <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                             <span class="tooltip">Copy</span>
-                             <span class="tooltiptwo">Copied</span>
-                         </div>
-                     </div>
+                 </div>
+            </div>
+         </div>
+    
+         <div class="teamlistpaging">
+            <!-- 페이지 넘기기 -->
+            <div ng-app="DemoApp" flex layout="column">
+                <div flex ng-controller="MainController" layout="column">
+                  <section layout="row" layout-padding="">
+                    <cl-paging flex cl-pages="paging.total" , cl-steps="6" , cl-page-changed="paging.onPageChanged()" , cl-align="center center" , cl-current-page="paging.current"></cl-paging>
+                  </section>
                 </div>
-             </div>
-        
-             <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
-                </div>
-                <div class="teamlistboxleft">
-                     <div class="teamtitle">team Name</div>
-                     <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                     <div class="languagetag">
-                         <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                         <button type="button" class="tagbtn"><a href="">DB</a></button>
-                         <button type="button" class="tagbtn"><a href="">JS</a></button>
-                     </div>
-                     <div class="teamcreationdate">2022-08-22</div>
-                </div>
-                <div class="teamlistboxright">
-                     <div class="btndiv">
-                         <button class="join btn">모집 인원 : 1 명</button>
-                     </div>
-                     <div class="teamicons">
-                         <div class="linkcopy icons">
-                            <ion-icon name="link-outline" class="linkicon"></ion-icon>
-                             <span class="tooltip">Copy</span>
-                             <span class="tooltiptwo">Copied</span>
-                         </div>
-                     </div>
-                </div>
-             </div>
-        
-             <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
-                </div>
-                <div class="teamlistboxleft">
-                     <div class="teamtitle">team Name</div>
-                     <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                     <div class="languagetag">
-                         <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                         <button type="button" class="tagbtn"><a href="">DB</a></button>
-                         <button type="button" class="tagbtn"><a href="">JS</a></button>
-                     </div>
-                     <div class="teamcreationdate">2022-08-22</div>
-                </div>
-                <div class="teamlistboxright">
-                     <div class="btndiv">
-                         <button class="join btn">모집 인원 : 1 명</button>
-                     </div>
-                     <div class="teamicons">
-                         <div class="linkcopy icons">
-                            <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                             <span class="tooltip">Copy</span>
-                             <span class="tooltiptwo">Copied</span>
-                         </div>
-                     </div>
-                </div>
-             </div>
-        
-             <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
-                </div>
-                <div class="teamlistboxleft">
-                     <div class="teamtitle">team Name</div>
-                     <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                     <div class="languagetag">
-                         <button type="button" class="tagbtn"><a href="">HTML</a></button>
-                         <button type="button" class="tagbtn"><a href="">DB</a></button>
-                         <button type="button" class="tagbtn"><a href="">JS</a></button>
-                     </div>
-                     <div class="teamcreationdate">2022-08-22</div>
-                </div>
-                <div class="teamlistboxright">
-                     <div class="btndiv">
-                         <button class="join btn">모집 인원 : 1 명</button>
-                     </div>
-                     <div class="teamicons">
-                         <div class="linkcopy icons">
-                            <ion-icon name="link-outline" class="md hydrated"></ion-icon>
-                             <span class="tooltip">Copy</span>
-                             <span class="tooltiptwo">Copied</span>
-                         </div>
-                     </div>
-                </div>
-             </div>
-        
-             <div class="teamlistpaging">
-                <!-- 페이지 넘기기 -->
-                <div ng-app="DemoApp" flex layout="column">
-                    <div flex ng-controller="MainController" layout="column">
-                      <section layout="row" layout-padding="">
-                        <cl-paging flex cl-pages="paging.total" , cl-steps="6" , cl-page-changed="paging.onPageChanged()" , cl-align="center center" , cl-current-page="paging.current"></cl-paging>
-                      </section>
-                    </div>
-                  </div>
-             </div>
+            </div>
+         </div>    
+
+            
             <!-- ==============작업공간============== -->
         </div>
-        <!-- 오른쪽 사이드 -->
-        <div class="sideRight">
 
-        </div>
+
 
         <!-- 상단 스크롤 이동 -->
         <div class="toTop"><i class="uil uil-arrow-circle-up"></i></div>
@@ -298,10 +299,117 @@
     </div>
 
 
+    
+    </div>
     <!-- 푸터 -->
     <div class="common_footer">푸터임다</div>
 
+
+
+<!-- *****************modal****************** -->
+<div class="modal-div">
+    <div id="teammodal-div">
+        <div id="team-navbar">
+            <div id="teamname">
+                <a href="">팀이름</a>
+            </div>
+            <div id="team-category">
+                <a href="#">팀/팀원정보</a>
+                <a href="#">일정/공지사항</a>
+                <a href="#">팀가입</a>
+                <a href="#">팀탈퇴</a>
+            </div>
+        </div>
+        <!-- ajax? -->
+        <div id="team-content">
+            <div class="content-team-profile">
+                <div>팀순위 : <a href="">1</a> 위</div>
+                <div>에러 해결 누적 건수 : <a href="">1</a> 회</div> 
+                <div>팀 총 커미션 : <a href="">100,000</a> </div> 
+            </div>
+
+            
+            <div class="content-team-member">
+                <table>
+                    <thead>
+                        <td>활동점수</td>
+                        <td>닉네임</td>
+                        <td>활동언어</td>
+                        <td>직책</td>
+                    </thead>
+                    <!-- foreach로 수정 -->
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="teammember-paging">
+                <ul>
+                    <li>previous</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>next</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <ion-icon name="close-outline" id="xicon"></ion-icon>
 </div>
+
+
+</body>
+
+<!-- modal js -->
+<script src="/resource/js/teammodal2.js"></script>
 <!-- paging -->
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
@@ -310,8 +418,9 @@
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
 <script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.js'></script>
 <script src='https://rawgit.com/Crawlink/material-angular-paging/master/build/dist.min.js'></script>
-
+<!-- 팀목록 js -->
 <script src="/resource/js/teamlist.js"></script>
-<script src="../resource/js/BasicFrame.js"></script>
-</body>
+<!-- 메인 js -->
+<script src="/resource/js/BasicFrame.js"></script>
+
 </html>
