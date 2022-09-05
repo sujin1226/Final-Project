@@ -151,8 +151,6 @@
     display: none;
 }
 
-
-
 .user>ul>li,.alarm>ul>li{   
     /* border: solid 2px red;   */
 
@@ -216,7 +214,6 @@
 }
 
 
-
 /* ================================================ */
 
 /* 메인 섹션(조원 작업존) */
@@ -240,7 +237,6 @@
     border: solid 2px var(--ex-border-color);
     height: 150vh;
     width: 15%;
-
     border-radius: 10px;
 } */
 
