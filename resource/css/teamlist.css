@@ -6,7 +6,9 @@
     --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
     
     --teamlist-border: 1px solid gainsboro;
-    --btn-color: #0078FF;
+    /* --btn-color: #0078FF; */
+    --btn-color:rgba(255, 86, 30, .8);
+
 }
 /* a태그 기본 설정 */
 .main a{

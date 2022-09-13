@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/resource/css/BasicFrame.css">
-    <link rel="stylesheet" href="/resource/css/myPage.css">
+    <!-- <link rel="stylesheet" href="/resource/css/myPage.css"> -->
     <link rel="stylesheet" href="/resource/css/global.css">
 
    <!-- 팀목록 css -->
@@ -101,7 +101,7 @@
                         </form>
                     </div>
                     <div class="teammakingbtn">
-                        <a href="teammaking.html" target="_blank"><button>팀만들기</button></a>
+                        <a href="teammaking.html" target="_blank" onclick='window.open("teammaking.html","teammake","width=600, height=600")'><button>팀만들기</button></a>
                     </div>
                 </div>
             
@@ -124,7 +124,7 @@
            </div>
            <div class="teamlistboxright">
                 <div class="btndiv">
-                    <button class="join btn">모집 인원 : 1 명</button>
+                    <button class="join btn">팀정보보기</button>
                 </div>
                 <div class="teamicons">
                     <div class="linkcopy icons">
@@ -152,7 +152,7 @@
             </div>
             <div class="teamlistboxright">
                  <div class="btndiv">
-                     <button class="joinend btn">모집 인원 : 0명</button>
+                    <button class="join btn">팀정보보기</button>
                  </div>
                  <div class="teamicons">
                      <div class="linkcopy icons">
@@ -180,7 +180,7 @@
             </div>
             <div class="teamlistboxright">
                  <div class="btndiv">
-                     <button class="join btn">모집 인원 : 1 명</button>
+                    <button class="join btn">팀정보보기</button>
                  </div>
                  <div class="teamicons">
                      <div class="linkcopy icons">
@@ -208,7 +208,7 @@
             </div>
             <div class="teamlistboxright">
                  <div class="btndiv">
-                     <button class="join btn">모집 인원 : 1 명</button>
+                    <button class="join btn">팀정보보기</button>
                  </div>
                  <div class="teamicons">
                      <div class="linkcopy icons">
@@ -236,7 +236,7 @@
             </div>
             <div class="teamlistboxright">
                  <div class="btndiv">
-                     <button class="join btn">모집 인원 : 1 명</button>
+                    <button class="join btn">팀정보보기</button>
                  </div>
                  <div class="teamicons">
                      <div class="linkcopy icons">
@@ -264,7 +264,7 @@
             </div>
             <div class="teamlistboxright">
                  <div class="btndiv">
-                     <button class="join btn">모집 인원 : 1 명</button>
+                    <button class="join btn">팀정보보기</button>
                  </div>
                  <div class="teamicons">
                      <div class="linkcopy icons">
@@ -314,18 +314,55 @@
                 <a href="">팀이름</a>
             </div>
             <div id="team-category">
-                <a href="#">팀/팀원정보</a>
-                <a href="#">일정/공지사항</a>
+                <a href="#">팀정보</a>
+                <a href="#">공지사항</a>
                 <a href="#">팀가입</a>
                 <a href="#">팀탈퇴</a>
             </div>
         </div>
         <!-- ajax? -->
         <div id="team-content">
+
             <div class="content-team-profile">
                 <div>팀순위 : <a href="">1</a> 위</div>
                 <div>에러 해결 누적 건수 : <a href="">1</a> 회</div> 
                 <div>팀 총 커미션 : <a href="">100,000</a> </div> 
+            </div>
+
+            <div class="content-team-date">
+                <table>
+                    <thead>
+                        <td>번호</td>
+                        <td>제목</td>
+                        <td>작성자</td>
+                        <td>작성일</td>
+                    </thead>
+                    <!-- foreach로 수정 -->
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                    <tbody>
+                        <td><i class="fa-solid fa-fire"></i> <a href="">3</a></td>
+                        <td><a href="/view/mypage/mypage_new_real.html" target="_blank"><i class="fa-solid fa-user"></i></a> <a href="/view/mypage/mypage_new_real.html" target="_blank">nickname</a></td>
+                        <td>
+                            <a href="">html</a>
+                            <a href="">css</a>
+                            <a href="">js</a>
+                        </td>
+                        <td><i class="fa-solid fa-crown"></i></td>
+                    </tbody>
+                </table>
+                <!-- ... -->
+            </div>
+            <div class="team-content-date-detail">
+                 <a href="">공지사항 더보기</a>
             </div>
 
             

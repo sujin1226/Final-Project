@@ -94,6 +94,39 @@
     justify-content: center;
     flex-direction: column;
 }
+/* 공지사항 미리보기 */
+.content-team-date{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
+    width: 95%;
+    height: 30%;
+    margin-top: 5%;
+}
+.content-team-date table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+.content-team-date table td{
+    border: 1px solid var(--dark-border-color);
+}
+.team-content-date-detail{
+    width: 95%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+.team-content-date-detail a{
+    text-decoration: none;
+    color: var(--basic-black-color);
+    padding: 0 10px;
+    background-color: var(--basic-gainsboro-color);
+    border-radius: var(--basic-border-radius);
+    cursor: pointer;
+}
+
+.team-content-date-detail a:hover{
+    background-color: var(--hover-btn-color);
+}
 
 /* 팀정보 */
 .content-team-profile{
@@ -142,4 +175,7 @@
     background-color: var(--basic-gainsboro-color);
     border-radius: var(--basic-border-radius);
     cursor: pointer;
+}
+#teammember-paging ul li:hover{
+    background-color: var(--hover-btn-color);
 }
