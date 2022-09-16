@@ -6,7 +6,9 @@
     --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
     
     --teamlist-border: 1px solid gainsboro;
-    --btn-color: #0078FF;
+    /* --btn-color: #0078FF; */
+    --btn-color:rgba(255, 86, 30, .8);
+
 }
 /* a태그 기본 설정 */
 .main a{
@@ -65,15 +67,18 @@
     height: 100%;
     padding: 0 20px;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+ }
 .search-box form input[type="text"]:focus{
     outline: 1px solid gray;
 }
-.search-box .uil-search{
-    color: black;
+.searchbtn{
     position: relative;
-    top: 5%;
-    right: 5%;
-    cursor: pointer;
+    right: 8%;
+    
+    border: none;
+    background-color: white;
 }
 
 /* 팀만들기 버튼 */
@@ -149,19 +154,10 @@
 }
 /* 버튼 div */
 .btndiv{
-    height: 80%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
-}
-/* 아이콘들 */
-.teamicons{
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-right: 10px;
     /* border: 1px solid black; */
 }
 /* 버튼들 */
@@ -179,91 +175,6 @@
 .joinend{
     background-color: rgb(186, 186, 186);
     color: var(--main-text-color);
-}
-/* 링크 */
-.linkcopy{
-    cursor: pointer;
-    border: none;
-    position: relative;
-}
-.linkcopy ion-icon{
-    font-size: 1.8rem;
-}
-
-/* 툴팁 */
-.tooltip{
-    position: absolute;
-    top: 100%;
-    left: -40%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: var(--main-text-color);
-    border-radius: 5px;
-    font-size: 0.8rem;
-    padding: 5px 10px;
-
-    transition: all .2s;
-    opacity: 0;
-}
-.tooltip.ani{
-    animation-name: copy;
-    animation-duration: .1s;
-}
-
-@keyframes copy {
-    0%{
-        opacity: 0.2;
-        top: 120%;
-    }
-    30%{
-        opacity: 0.5;
-        top: 115%;
-    }
-    50%{
-        opacity: 0.7;
-        top: 110%;
-    }
-    70%{
-        opacity: 0.9;
-        top: 105%;
-    }
-    100%{
-        opacity: 1;
-        top: 100%;
-    }
-}
-
-.tooltip::after{
-    content: "";
-    position: absolute;
-    top: -63%;
-    left: 35%;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
-}
-
-.tooltiptwo{
-    position: absolute;
-    top: 100%;
-    left: -50%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: var(--main-text-color);
-    border-radius: 5px;
-    font-size: 0.8rem;
-    padding: 5px 10px;
-
-    transition: all .2s;
-    opacity: 0;
-}
-
-.tooltiptwo::after{
-    content: "";
-    position: absolute;
-    top: -63%;
-    left: 35%;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
 }
 /* 페이징 */
 .teamlistpaging{
