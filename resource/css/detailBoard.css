@@ -71,3 +71,19 @@
     border-bottom: 1px solid black;
     height: 50px;
 }
+/* 삭제 수정 버튼 */
+.detail_btn {
+    display: flex;
+    justify-content: right;
+    
+}
+.detail_btn > button, input[type="submit"] {
+    padding: 5px 20px;
+    font-size: 20px;
+    margin: 10px 5px;
+    float: right;
+    border-radius: 5px;
+    border: none;
+    background: rgb(235, 117, 48);
+    color: white;
+}

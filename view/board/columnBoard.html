@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/resource/css/global.css">
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+      <!-- paging -->
+   <link rel='stylesheet' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.css'>
+
     <link rel="stylesheet" href="/resource/css/board.css">
     <title>HotFix</title>
 </head>
@@ -79,26 +82,33 @@
             <!-- ==============작업공간============== -->
             <div class="board_container">
                 <div class="board_title">
-                    <h1>일상</h1>
+                    <h1>칼럼</h1>
                 </div>
                 <div class="board_category">
                    <ul>
-                    <li>일상</li>
-                    <li>컬럼</li>
-                    <li>커리어</li>
-                    <li>스터디</li>
-                    <li>공지</li>
+                    <li><a href="lifeBoard.html">일상</a></li>
+                    <li><a href="columnBoard.html">칼럼</a></li>
+                    <li><a href="studyBoard.html">스터디</a></li>
+                    <li><a href="AnnoBoard.html">공지</a></li>
                    </ul>
                 </div>
+
+
                 <div class="board_nav">
-                    <button>작성하기</button>
+                    <button onclick="location.href='boardWriteForm.html' ">작성하기</button>
                     <div class="board_nav_search">
                         <i class="uil uil-search"></i><input type="text" placeholder="검색">
                     </div>
-                    <div class="board_nav_btn">
-                        <button>최신순</button>
+                     <div class="board_nav_btn">
+                        <select name="">
+                            <option value="">최신순</option>
+                            <option value="">조회순</option>
+                            <option value="">추천순</option>
+                        </select>
                     </div>
-                </div>
+                   
+                </div> 
+
                 <div class="board_main">
                     <div class="board_header">
                         <div class="board_write">
@@ -113,7 +123,7 @@
                         </div>
                     </div>
                     <div class="board_content">
-                        <span> Java 개념을 잘 모르겠습니다 알려주세요</span>
+                        <span> <a href="detailBoard.html">Java 개념을 잘 모르겠습니다 알려주세요</a></span>
                     </div>
                     <div class="board_tag">
                         <span>#excel</span>
@@ -135,7 +145,7 @@
                         </div>
                     </div>  
                     <div class="board_content">
-                        <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequatur sunt excepturi ipsum incidunt deserunt itaque fugiat illo saepe, magnam facere voluptas. Consequatur, debitis! Accusantium mollitia animi eaque quo asperiores.</span>
+                        <span> <a href="detailBoard.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequatur sunt excepturi ipsum incidunt deserunt itaque fugiat illo saepe, magnam facere voluptas. Consequatur, debitis! Accusantium mollitia animi eaque quo asperiores.</a> </span>
                     </div>
                     <div class="board_tag">
                         <span>#excel</span>
@@ -143,114 +153,24 @@
                         <span>#js</span>
                     </div>
                 </div> 
-                <div class="board_main">
-                    <div class="board_header">
-                        <div class="board_write">
-                            <span><i class="fas fa-feather-alt"></i></span>
-                            <span>200<i class="fas fa-bolt"></i></span>
-                            <span>나나콘</span>
-                            <span>약 5시간전</span>
-                        </div>
-                        <div class="board_view">
-                            <span>0 조회수</span>
-                            <span>1 추천수</span>
-                        </div>
-                    </div>  
-                    <div class="board_content">
-                        <span>Java 개념을 잘 모르겠습니다 알려주세요</span>
-                    </div>
-                    <div class="board_tag">
-                        <span>#excel</span>
-                        <span>#java</span>
-                        <span>#js</span>
-                    </div>
-                </div>  
-                <div class="board_main">
-                    <div class="board_header">
-                        <div class="board_write">
-                            <span><i class="fas fa-feather-alt"></i></span>
-                            <span>200<i class="fas fa-bolt"></i></span>
-                            <span>나나콘</span>
-                            <span>약 5시간전</span>
-                        </div>
-                        <div class="board_view">
-                            <span>0 조회수</span>
-                            <span>1 추천수</span>
-                        </div>
-                    </div>  
-                    <div class="board_content">
-                        <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequatur sunt excepturi ipsum incidunt deserunt itaque fugiat illo saepe, magnam facere voluptas. Consequatur, debitis! Accusantium mollitia animi eaque quo asperiores.</span>
-                    </div>
-                    <div class="board_tag">
-                        <span>#excel</span>
-                        <span>#java</span>
-                        <span>#js</span>
-                    </div>
-                </div>  
-                <div class="board_main">
-                    <div class="board_header">
-                        <div class="board_write">
-                            <span><i class="fas fa-feather-alt"></i></span>
-                            <span>200<i class="fas fa-bolt"></i></span>
-                            <span>나나콘</span>
-                            <span>약 5시간전</span>
-                        </div>
-                        <div class="board_view">
-                            <span>0 조회수</span>
-                            <span>1 추천수</span>
-                        </div>
-                    </div>  
-                    <div class="board_content">
-                        <span> Java 개념을 잘 모르겠습니다 알려주세요</span>
-                    </div>
-                    <div class="board_tag">
-                        <span>#excel</span>
-                        <span>#java</span>
-                        <span>#js</span>
-                    </div>
-                </div>     
-                <div class="board_main">
-                    <div class="board_header">
-                        <div class="board_write">
-                            <span><i class="fas fa-feather-alt"></i></span>
-                            <span>200<i class="fas fa-bolt"></i></span>
-                            <span>나나콘</span>
-                            <span>약 5시간전</span>
-                        </div>
-                        <div class="board_view">
-                            <span>0 조회수</span>
-                            <span>1 추천수</span>
-                        </div>
-                    </div>  
-                    <div class="board_content">
-                        <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequatur sunt excepturi ipsum incidunt deserunt itaque fugiat illo saepe, magnam facere voluptas. Consequatur, debitis! Accusantium mollitia animi eaque quo asperiores.</span>
-                    </div>
-                    <div class="board_tag">
-                        <span>#excel</span>
-                        <span>#java</span>
-                        <span>#js</span>
-                    </div>
-                </div>     
+              
+                  
+                
                   
             </div>
-            <div class="page_wrap">
-                <div class="page_nation">
-                   <a class="arrow pprev" href="#"></a>
-                   <a class="arrow prev" href="#"></a>
-                   <a href="#" class="active">1</a>
-                   <a href="#">2</a>
-                   <a href="#">3</a>
-                   <a href="#">4</a>
-                   <a href="#">5</a>
-                   <a href="#">6</a>
-                   <a href="#">7</a>
-                   <a href="#">8</a>
-                   <a href="#">9</a>
-                   <a href="#">10</a>
-                   <a class="arrow next" href="#"></a>
-                   <a class="arrow nnext" href="#"></a>
+
+            <div class="pageWrap">
+                <!-- 페이지 넘기기 -->
+                <div ng-app="DemoApp" flex layout="column">
+                    <div flex ng-controller="MainController" layout="column">
+                      <section layout="row" layout-padding="">
+                        <cl-paging flex cl-pages="paging.total" , cl-steps="6" , cl-page-changed="paging.onPageChanged()" , cl-align="center center" , cl-current-page="paging.current"></cl-paging>
+                      </section>
+                    </div>
                 </div>
-             </div>
+             </div>    
+    
+
         </div>
 
             
@@ -273,5 +193,15 @@
 </body>
 
 <script src="/resource/js/BasicFrame.js"></script>
+<script src="/resource/js/board.js"></script>
+<!-- paging -->
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.js'></script>
+<script src='https://rawgit.com/Crawlink/material-angular-paging/master/build/dist.min.js'></script>
+
 
 </html>
