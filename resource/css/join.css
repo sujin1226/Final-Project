@@ -13,7 +13,7 @@
     justify-content: center;
     /* border: 3px solid black; */
 }
-.join_Div {
+.join_Div, #join_Form, #SNSjoin_Form {
     width: 70%;
     height: 100%;
     margin: auto;
