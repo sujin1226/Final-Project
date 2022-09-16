@@ -21,7 +21,7 @@
     width: 100%;
     height: 8vh;
     min-width: 1280px;
-
+    
     /* fixed 주석 처리하면 원래상태로 바뀜 */
     position: fixed;
     z-index: 100;

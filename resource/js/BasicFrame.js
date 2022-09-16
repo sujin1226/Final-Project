@@ -13,7 +13,7 @@ let myAlarm = document.querySelector(".alarm>div"); //알람 동그라미
 let myAlarm_drop = document.querySelector(".alarm>ul"); //알람 동그라미 드롭다운 요소
 
 // 플래그 스위치 모읍
-let flagMyPage = false;  //마이페이지 동그라미 스위치
+let flagMyPage = false;  //마이페이지 동그라미 스위치d
 let flagMyAlarm = false;  //알람 동그라미 스위치
 
 
