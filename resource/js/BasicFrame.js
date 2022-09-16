@@ -11,8 +11,6 @@ let myPage_drop = document.querySelector(".user>ul"); //마이페이지 동그�
 let myAlarm = document.querySelector(".alarm>div"); //알람 동그라미
 let myAlarm_drop = document.querySelector(".alarm>ul"); //알람 동그라미 드롭다운 요소
 
-
-
 // 플래그 스위치 모읍
 let flagMyPage = false;  //마이페이지 동그라미 스위치
 let flagMyAlarm = false;  //알람 동그라미 스위치
@@ -32,7 +30,6 @@ dropDown(myAlarm,myAlarm_drop,flagMyAlarm); // 알람 드롭다운 이벤트
 // header 마이페이지 내의 li태그 호버시 색깔변경
 let myPage_liTag = document.querySelectorAll(".user>ul>li"); //마이페이지 동그라미 드롭다운 요소
 textHover(myPage_liTag);
-
 
 
 // ! =====================함수존=======================
@@ -83,12 +80,13 @@ function dropDown(param,ele,flag){
 }
 
 
+
 // * 22-08-23 HIKARI 컬러 함수
 /**
  * 효과줄 변수 및 컬러 설정
  * @example backColor(Btn,"red")
  */
- function textColor(param,textColor){
+ function textColor(paramxt,teColor){
     param.style.color=textColor;
 }
 

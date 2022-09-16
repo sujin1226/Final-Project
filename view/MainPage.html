@@ -14,18 +14,17 @@
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>HOTFIX</title>
+    <!-- 메인섹션 컨트롤을 위해 내부스타일시트 사용 -SEO -->
     <style>
         .main {
-            margin: 0 auto;
-
+            background-color: white;
+            border: none !important;
+            height: 150vh;
+            height: 100%;
             width: 70%;
-            display: grid;
-            grid-template-areas:
-                "first_preview"
-                "second_preview";
-            border: 1px solid red;
         }
     </style>
+
 </head>
 
 <body>
@@ -34,7 +33,7 @@
     <div class="common_header">
         <!-- 헤더 섹션 왼쪽 -->
         <div class="common_header_left">
-            <img src="../resource/img/HOT.png" alt="">
+            <img src="../resource/img/hoxfix_1.png" alt="">
         </div>
         <!-- 헤더 섹션 가운데 -->
         <div class="common_header_center">
@@ -45,24 +44,37 @@
                 <li><a href="">랭킹</a></li>
                 <li><a href="">커뮤니티</a></li>
             </ul>
-
         </div>
         <!-- 헤더 섹션 오른쪽 -->
         <div class="common_header_right">
             <!-- 마이페이지 -->
             <div class="user">
-                <i class="uil uil-user-circle"></i>
-
+                <div><i class="uil uil-user-circle"></i></div>
+                <ul>
+                    <li>마이페이지</li>
+                    <li>충전하기</li>
+                    <li>관리자 페이지</li>
+                    <li>로그아웃</li>
+                </ul>
             </div>
             <!-- 알림페이지 -->
             <div class="alarm">
-                <i class="uil uil-bell"></i>
+                <div><i class="uil uil-bell"></i></div>
+                <ul>
+                    <li><span>정산이 완료되었어요!</span><span>방금</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i
+                                class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>충전이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span>
+                    </li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                </ul>
             </div>
         </div>
-        <div class="dropList">
-
-        </div>
-
     </div>
 
     <div class="container">
@@ -95,6 +107,7 @@
         <div id="main_big_preview">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                    <!-- 일단 테스트 이미지고 향후 이벤트배너등으로 활용가능 -->
                     <div class="swiper-slide"><img src="../TestImage/testImage1.jpeg" alt=""></div>
                     <div class="swiper-slide"><img src="../TestImage/testImage2.jpeg" alt=""></div>
                     <div class="swiper-slide"><img src="../TestImage/testImage3.jpeg" alt=""></div>
@@ -119,12 +132,12 @@
             </div>
         </div> -->
         <div id="main_community_preview">
+            <!-- 커뮤니티 프리뷰는 임시로 색상 지정및 공간분할해뒀고 향후 백단 완성에 따라서 디자인완성 -->
             <div id="community_preview_frist">
                 <div id="comm_fir_preview_title">
                     NEW HOTFIX REQUEST
                 </div>
                 <div id="comm_fir_preview_content">
-                    REQUEST 
                 </div>
             </div>
             <div id="community_preview_second">
@@ -132,7 +145,11 @@
                     BOARD TITLE
                 </div>
                 <div id="comm_sec_preview_content">
-                    POST
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         </div>

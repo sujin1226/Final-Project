@@ -4,12 +4,16 @@
     box-sizing: border-box;
 } */
 
+
+
 /* ################################# 메인섹션관리  ################################# */
+
 
 .main {
     margin: 0 auto;
     
     width: 70%;
+
     display: grid;
     grid-template-areas: 
     "first_preview"
@@ -18,7 +22,7 @@
 }
 
 #main_big_preview {
-    height: 60vh;
+    height: 40vh;
     grid-area: first_preview;
     padding: 3vh;
     display: grid;
@@ -34,6 +38,8 @@
     height: 100%;
     grid-area: preview;
     /* border: 1px solid green; */
+    cursor: pointer;
+    border-radius: 5px;
   }
 
   .swiper-slide {
@@ -60,8 +66,16 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
   }
+
+  .swiper > div {
+    color: rgba(248, 58, 37, .5) !important;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgba(248, 58, 37, .5) !important;
+}
+
 
 /* ################################# 생략  ################################# */
 /* 슬라이드 효과 넣으면서 메인창 정리 */
@@ -130,19 +144,29 @@
     height: 15%;
     padding: 1vh 1vw;
     /* border: 1px solid green; */
-    background-color: rgba(255, 86, 30, .8);
+    background-color: rgba(248, 57, 37, 1);
     font-size: 1.3em;
     line-height: 8.5vh;
     color: rgba(255,255,255,1);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #comm_fir_preview_content{
     width: 100%;
     height: 85%;
-    padding: 1vh 1vw;
+    padding: 2vh 0;
     /* border: 1px solid green; */
 }
+.pre_con {
+    width: 100%;
+    height: 20%;
+    border-top: 1px solid rgba(255, 86, 30, .4);
+    margin: 0 0 1vh 0;
+    background-color: red;
+}
+
+
 
 #community_preview_second {
     grid-area: second_comm_preview;
@@ -156,17 +180,24 @@
     height: 15%;
     padding: 1vh 1vw;
     /* border: 1px solid green; */
-    background-color: rgba(255, 86, 30, .8);
+    background-color: rgba(248, 57, 37, 1);
     font-size: 1.3em;
     line-height: 8.5vh;
     color: rgba(255,255,255,1);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #comm_sec_preview_content{
     width: 100%;
     height: 85%;
-    padding: 1vh 1vw;
+    padding: 2vh 0;
     /* border: 1px solid green; */
+}
+#comm_sec_preview_content div {
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid rgba(255, 86, 30, .4);
+    margin: 0 0 1vh 0;
 }
 
