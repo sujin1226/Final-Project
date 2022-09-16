@@ -12,7 +12,9 @@
 .main {
     margin: 0 auto;
     
+
     width: 100%;
+
 
     display: grid;
     grid-template-areas: 
@@ -41,7 +43,6 @@
     /* border: 1px solid green; */
     cursor: pointer;
     border-radius: 5px;
-    
   }
 
   .swiper-slide {
@@ -195,6 +196,7 @@
 .preview_content :nth-child(6) {
     border: none;
 }
+
 .content_item {
     width: 33vw;
     height: 11.9vh;
@@ -257,3 +259,4 @@
     font-weight: 600;
     cursor: pointer;
 }
+

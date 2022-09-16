@@ -1,0 +1,223 @@
+.RmContainer {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+.RmHeader {
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+}
+.RmHeader > h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+/* 버튼, 서치바 */
+.RmSubtitle {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+.RmSubtitle button {
+    padding: 5px 20px;
+}
+
+/* 요청서 작성 */
+.RmWriteRequest {
+    width: 33%;
+}
+.RmWriteRequest > button {
+    border: none;
+    background-color: rgb(20, 190, 220);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* 전체 드롭다운 */
+.Rmlist {
+    width: 33%;
+    position: relative;
+	display: inline-block;
+    text-align: right;
+}
+.Rmdropdown {
+    position: relative;
+    display: inline-block;
+}
+.Rmdropdown-button {
+    background-color: whitesmoke;
+    font-size: 18px;
+    border: 1px solid #bbb;
+}
+.Rmdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 90px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.Rmdropdown-content a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+/* 서치바 */
+.RmSearchbar {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 33%;
+    padding: 5px;
+}
+.RmSearchbar > i {
+    padding-right: 5px;
+}
+.RmSearchbar>input {
+    border: none;
+    outline: none;
+}
+
+
+/* 해결 게시판 */
+.RmBoard {
+    margin: 30px auto;
+    width: 95%;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+
+}
+/* 해결 게시판 왼쪽 */
+.RmBoardLeft {
+    width: 70%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border-right: 1px solid #aaa;
+}
+
+.RmBoardLeft > p {
+    margin: 15px 20px;
+}
+.RmBoardLeft > p:nth-child(1) {
+    font-size: 30px;
+    color: red;
+}
+/* 해결 게시판 오른쪽 */
+.RmBoardRight {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 30%;
+}
+.RmBoardRight > p {
+    margin: 5px 30px;
+}
+.RmBoardRight > button {
+    margin: 10px 30px;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    background-color: deeppink;
+    border-radius: 5px;
+}
+/* --------모달------------- */
+/* 스크롤막기 */
+html, body {
+    overflow: auto;
+    height: 100%;
+  }
+
+.RmContainer {
+    position: relative;
+}
+
+.RmModal_wrap {
+    display: none;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    border: 2px solid black;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#eee;
+    z-index: 2;
+    overflow: auto;
+    
+}
+.RmModal_background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.5);
+    top:0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.RmModal_close {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.RmModal_close i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+}
+
+.RmModal_wrap .ModalText {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.modal_close .closeImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ModalText > h1 {
+    font-size: 35px;
+    color: red;
+    text-align: center;
+}
+.ModalHeader {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ModalHeader > p:nth-child(1) {
+    margin-right: 10px;
+}
+.Modaltitle > p {
+    padding: 10px;
+}
+.ModalCon img {
+    margin: 10px 0px;
+    width: 100%;
+}
+.ModalFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+.ModalFooter >button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: hotpink;
+}
