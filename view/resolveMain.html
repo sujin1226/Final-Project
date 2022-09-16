@@ -91,7 +91,7 @@
                     <div class="RmSubtitle">
                         <!-- 요청서 버튼  -->
                         <div class="RmWriteRequest">
-                            <button>요청서 작성</button>
+                            <button type="button" onclick="location.href='resolveWriteForm.html' ">요청서 작성</button>
                         </div>
 
                         <!-- 서치바 -->
@@ -100,16 +100,15 @@
                         </div>
                         <!-- 태그 버튼 -->
                         <div class="Rmlist">
-                            <div class="Rmdropdown">
-                                <button class="Rmdropdown-button">최신순</button>
-                                <div class="Rmdropdown-content">
-                                    <a href="#">최신순</a>     
-                                    <a href="#">커미션순</a>
-                                  
-                                </div>
-                            </div>
+                            <select name="">
+                                <option value="">최신순</option>
+                                <option value="">커미션순</option>
+                            </select>
+
+       
                         </div>
                     </div>
+
                     <!-- 해결 게시판 -->
                     <div class="RmBoard">
                         <div class="RmBoardLeft">
@@ -190,21 +189,6 @@
 <script src="../resource/js/BasicFrame.js"></script>
 
 <script>
-    let DetailBtn = document.querySelector('.Rmdropdown');
-    let DetailBtnCon = document.querySelector('.Rmdropdown-content');
-    let isClick = 0;
-
-    DetailBtn.addEventListener('click', function () {
-        if (isClick == 0) {
-            DetailBtnCon.style = "display : block";
-
-            isClick = 1;
-
-        } else if (isClick == 1) {
-            DetailBtnCon.style = "display : none";
-            isClick = 0;
-        }
-    })
 
     // 모달 열기
     function modalOpen() {
@@ -221,15 +205,15 @@
 
     //버튼 클릭리스너 달기
     let DetailModal = document.querySelectorAll('.DetailModal');
-    
-    for( let i=0; i < DetailModal.length; i++) {
+
+    for (let i = 0; i < DetailModal.length; i++) {
         DetailModal[i].addEventListener('click', modalOpen);
     }
 
 
     document.querySelector('.RmModal_close').addEventListener('click', modalClose);
 
- 
+
 
 </script>
 </script>

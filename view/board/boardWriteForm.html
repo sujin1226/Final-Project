@@ -93,8 +93,7 @@
                         <option value="일상">일상</option>
                         <option value="컬럼">컬럼</option>
                         <option value="커리어">커리어</option>
-                        <option value="스터디">스터디</option>
-                        <option value="스터디">공지</option>    
+                        <option value="공지">공지</option>    
                     </select>
                 </div>
                 <div class="WF_input_box">
@@ -107,7 +106,7 @@
                         <div id="smarteditor">
                             <textarea name="editorTxt" id="editorTxt" rows="20" cols="100" placeholder="내용을 입력해주세요"
                                 style="width: 100%"></textarea>
-                        </div>
+                        </div> 
                 </div>
                 <div class="WF_input_box">
                     <p>태그</p>
@@ -115,7 +114,7 @@
                 </div>
                 <div class="boardWF_btn">
                     <button>취소</button>
-                    <button>등록</button>
+                    <button type="button" onclick="location.href='board.html' ">등록</button>
                 </div>
 
                 </form>
@@ -141,23 +140,6 @@
 </body>
 
 <script src="../resource/js/BasicFrame.js"></script>
-<script>
-    let oEditors = []
 
-    smartEditor = function () {
-        console.log("Naver SmartEditor")
-        nhn.husky.EZCreator.createInIFrame({
-            oAppRef: oEditors,
-            elPlaceHolder: "editorTxt",
-            sSkinURI: "/smart/SmartEditor2Skin.html",
-            fCreator: "createSEditor2"
-        })
-    }
 
-    $(document).ready(function () {
-        smartEditor()
-    })
-
-    
-</script>
 </html>
