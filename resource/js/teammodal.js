@@ -63,20 +63,62 @@ xicon2.addEventListener('click', function(){
 
 //모달창 배경 눌러도 꺼질 수 있도록
 modaldiv2.addEventListener('click', function(e){    
-    console.log(e.target);
     if(e.target.className == 'modal2-div'){
         modaldiv2.style.display = 'none';
         xicon2.style.display = 'none';
     }
 })
 
-const teamjoinbtn = document.querySelector('.teamjoin-btn');
-const teamsecssionbtn = document.querySelector('.teamsecession-btn');
+// ==========================팀가입 모달========================
 
+const teamjoinbtn = document.querySelector('.teamjoin-btn');
+const modaldiv3 = document.querySelector('.modal3-div');
+const xicon3 = document.querySelector('#xicon3');
+
+
+//팀가입버튼 누르면 모달창 키기
 teamjoinbtn.addEventListener('click', function(){
-    alert('__팀에 가입하시겠습니까?');
+    modaldiv3.style.display = 'flex';
+    xicon3.style.display = 'block';
 })
 
+// 모달창 끄기
+xicon3.addEventListener('click', function(){
+    modaldiv3.style.display = 'none';
+    xicon3.style.display = 'none';
+})
+
+//모달창 배경 눌러도 꺼질 수 있도록
+modaldiv3.addEventListener('click', function(e){    
+    if(e.target.className == 'modal3-div'){
+        modaldiv3.style.display = 'none';
+        xicon3.style.display = 'none';
+    }
+})
+
+
+// ==========================팀탈퇴 모달========================
+
+const teamsecssionbtn = document.querySelector('.teamsecession-btn');
+const modaldiv4 = document.querySelector('.modal4-div');
+const xicon4 = document.querySelector('#xicon4');
+
+//팀탈퇴버튼 누르면 모달창 키기
 teamsecssionbtn.addEventListener('click', function(){
-    alert('__팀을 탈퇴하시겠습니까?');
+    modaldiv4.style.display = 'flex';
+    xicon4.style.display = 'block';
+})
+
+// 모달창 끄기
+xicon4.addEventListener('click', function(){
+    modaldiv4.style.display = 'none';
+    xicon4.style.display = 'none';
+})
+
+//모달창 배경 눌러도 꺼질 수 있도록
+modaldiv4.addEventListener('click', function(e){    
+    if(e.target.className == 'modal4-div'){
+        modaldiv4.style.display = 'none';
+        xicon4.style.display = 'none';
+    }
 })

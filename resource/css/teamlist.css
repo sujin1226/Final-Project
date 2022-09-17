@@ -1,13 +1,11 @@
 :root{
     --main-black-color: rgb(29,32,34); /* 메인 블랙칼라 */
-    --main-white-color:rgb(247,247,247);  /* 메인 화이트칼라 */
-    --main-red-color: rgb(238,43,42);  /* 메인 레드 칼라 */
     --main-text-color: rgb(247,247,247);
-    --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
-    
+
     --teamlist-border: 1px solid gainsboro;
-    /* --btn-color: #0078FF; */
-    --btn-color:rgba(255, 86, 30, .8);
+    --border-radius: 10px;
+    --btn-hover-gray-color:rgb(190, 189, 189);
+    --btn-color:rgba(248, 58, 37, .9);
 
 }
 /* a태그 기본 설정 */
@@ -15,27 +13,21 @@
     text-decoration: none;
     color: var(--main-black-color);
 }
+/* 제목 */
+.RmHeader{
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+}
+.RmHeader > h1 {
+    font-size: 30px;
+    font-weight: bolder;
+}
 /* 검색기능 틀 */
 .teamlistsearch{
     border-bottom: var(--teamlist-border);
     width: 100%;
     height: 15vh;
-}
-.type{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.type div{
-    padding: 0 5vh;
-}
-.type div a{
-    color: gray;
-}
-.type div a:hover{
-    color: black;
 }
 .search{
     width: 100%;
@@ -51,9 +43,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 70px;
 }
 .search-box form{
-    width: 60%;
+    width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -71,7 +64,7 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px white inset;
  }
 .search-box form input[type="text"]:focus{
-    outline: 1px solid gray;
+    outline: none;
 }
 .searchbtn{
     position: relative;
@@ -93,7 +86,7 @@ input:-webkit-autofill {
     color: white;
     background: var(--btn-color);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     cursor: pointer;
 }
 /* 팀목록 가장 큰 틀 */
@@ -141,12 +134,12 @@ input:-webkit-autofill {
 /* 태그 */
 .tagbtn{
     background-color: gainsboro;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     border: none;
     padding: 5px 1vh;
 }
 .tagbtn:hover{
-    background-color: rgb(190, 189, 189);
+    background-color: var(--btn-hover-gray-color);
 }
 /* 날짜 */
 .teamcreationdate{
@@ -163,17 +156,12 @@ input:-webkit-autofill {
 /* 버튼들 */
 .btn{
     border: none;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 10px 20px; 
 }
 /* 모집인원 */
 .join{
     background: var(--btn-color);
-    color: var(--main-text-color);
-}
-/* 모집마감 */
-.joinend{
-    background-color: rgb(186, 186, 186);
     color: var(--main-text-color);
 }
 /* 페이징 */
