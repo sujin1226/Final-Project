@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resource/css/login.css">
+    <link rel="stylesheet" href="../../resources/css/login.css">
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>login</title>
@@ -15,7 +15,7 @@
     <div class="login_Container">
         <div class="loginDiv">
             <div class="loginLogo">
-                <img src="/resource/img/HOT.png" alt="" srcset="">
+                <img src="../../resources/img/HOT.png" alt="" srcset="">
             </div>
 
             <div class="login_header">
@@ -23,7 +23,7 @@
             </div>
 
             <div class="login_Join">
-                회원이 아니신가요? &nbsp;<a href="/view/login_etc/join.html">회원가입 하기</a>
+                회원이 아니신가요? &nbsp;<a href="join.html">회원가입 하기</a>
             </div>
             <!-- ========== 로그인영역 ========== -->
             <form id="login_Form" method="POST" action="">
@@ -46,7 +46,7 @@
                 <div class="login_Forgot">
                     <label><input type="checkbox" name="rememberId" ${empty cookie.id.value ? "" :"checked" }> 아이디
                         저장</label>
-                    <a href="/view/login_etc/find_id.html">아이디 / 비밀번호 찾기</a>
+                    <a href="find_id.html">아이디 / 비밀번호 찾기</a>
                 </div>
 
                 <!-- 로그인 제출 영역 -->
@@ -62,17 +62,17 @@
             <!-- ========== SNS 로그인영역 ========== -->
             <form id="SNSlogin_Form" method="POST" action="">
                 <div class="login_sns">
-                    <li><a href=""><img src="/resource/img/네이버 로고.png" alt="" srcset=""></a></li>
-                    <li><a href=""><img src="/resource/img/구글 로고.png" alt="" srcset=""></a></li>
-                    <li><a href=""><img src="/resource/img/카카오톡 로고 라운드.png" alt="" srcset=""></a></li>
-                    <li><a href=""><img src="/resource/img/깃허브 로고.png" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="../../resources/img/네이버 로고.png" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="../../resources/img/구글 로고.png" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="../../resources/img/카카오톡 로고 라운드.png" alt="" srcset=""></a></li>
+                    <li><a href=""><img src="../../resources/img/깃허브 로고.png" alt="" srcset=""></a></li>
                 </div>
             </form>
         </div>
     </div>
 </body>
 
-<script src="/resource/js/login.js"></script>
+<script src="../../resources/js/login.js"></script>
 
 
 </html>
