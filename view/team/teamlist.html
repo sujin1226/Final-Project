@@ -9,34 +9,32 @@
     <link rel="stylesheet" href="/resource/css/global.css">
    <!-- 팀목록 css -->
    <link rel="stylesheet" href="/resource/css/teamlist.css">
-   <!-- 팀정보 modal css -->
+   <!-- modal css -->
    <link rel="stylesheet" href="/resource/css/teammodal.css">
    <!-- 유니콘 아이콘 사이트 -->
    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <!-- 폰트어썸 아이콘 사이트 -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-   <!-- paging -->
-   <link rel='stylesheet' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.css'>
     <title>HotFix</title>
 </head>
 
 <body>
 
      <!-- ======================== 헤더 ======================= -->
-    <div class="common_header">
+     <div class="common_header">
         <!-- 헤더 섹션 왼쪽 -->
         <div class="common_header_left">
-            <img src="/resource/img/hoxfix_1.png" alt="">
+            <a href="/view/hotFixStart.html"><img src="/resource/img/hoxfix_1.png" alt=""></a>
         </div>
         <!-- 헤더 섹션 가운데 -->
         <div class="common_header_center">
             <!-- 카테고리 -->
             <ul class="header_menu">
-                <li><a href="">HOTFIX</a></li>
-                <li><a href="">팀페이지</a></li>
-                <li><a href="">랭킹</a></li>
-                <li><a href="">커뮤니티</a></li>
+                <li><a href="/view/resolveMain.html">HOTFIX</a></li>
+                <li><a href="teamlist.html">팀페이지</a></li>
+                <li><a href="/view/ranking/ranking.html">랭킹</a></li>
+                <li><a href="/view/board/lifeBoard.html">커뮤니티</a></li>
             </ul>
             
         </div>
@@ -46,25 +44,24 @@
             <div class="user">
                 <div></div>
                 <ul>
-                    <li>마이페이지</li>
-                    <li>충전하기</li>
-                    <li>관리자 페이지</li>
-                    <li>로그아웃</li>
+                    <li><a href="/view/mypage/mypage_new_real.html">마이페이지</a></li>
+                    <li><a href="/view/pay/detailPoint.html">충전하기</a></li>
+                    <li><a href="/view/admin/admin.html">관리자 페이지</a></li>
+                    <li><a href="/view/hotFixStart.html">로그아웃</a></li>
                 </ul>
             </div>
             <!-- 알림페이지 -->
             <div class="alarm">
-                
-                <div><i class="uil uil-bell"></i></div>
+                <div></div>
                 <ul>        
-                    <li><span>정산이 완료되었어요!</span><span>방금</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>충전이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
-                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><i class="uil uil-angle-right-b"></i></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>방금</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></span></li>
+                    <li><span>~님의 댓글이 달렸어요의 댓글이 달렸어요의 댓글이 달렸어요</span><span>어제</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></span></li>
+                    <li><span>충전이 완료되었어요!</span><span>1분전</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></span></li>
+                    <li><span>커미션지급이 완료되었어요!</span><span>1분전</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></span></li>
+                    <li><span>팀장 권한을 위임 받았어요!</span><span>1분전</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></span></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></li>
+                    <li><span>정산이 완료되었어요!</span><span>1분전</span><span><a href="#"><i class="uil uil-angle-right-b"></i></a></li>
                     
                 </ul>
             </div>
@@ -84,12 +81,15 @@
                 *** 테스트시  <div class="main"> 하고 테스트 할 것
             -->
             <!-- ==============작업공간============== -->
+            <div class="RmHeader">
+                <h1>팀페이지</h1>
+            </div>
+            <!-- <div class="type">
+                select-box로 변경할 것
+                <div><a href="">전체</a></div>
+                <div><a href="">팀이름</a></div>
+            </div> -->
             <div class="teamlistsearch">
-                <div class="type">
-                    <!-- select-box -->
-                    <div><a href="">전체</a></div>
-                    <div><a href="">팀이름</a></div>
-                </div>
                 <div class="search">
                     <div class="search-box">
                         <form method="POST">
@@ -103,45 +103,35 @@
                 </div>
         	</div>
     
-        <div class="teamlistbox">
-                <div class="img">
-                    <img src="/resource/img/pIiRs.jpg" alt="">
+            <div class="teamlistbox">
+                    <div class="img">
+                        <img src="/resource/img/pIiRs.jpg" alt="">
+                    </div>
+                    <div class="teamlistboxleft">
+                        <div class="teamtitle">team Name</div>
+                        <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
+                        <div class="languagetag">
+                            <button type="button" class="tagbtn">HTML</button>
+                            <button type="button" class="tagbtn">DB</button>
+                            <button type="button" class="tagbtn">JS</button>
+                        </div>
+                        <div class="teamcreationdate">2022-08-22</div>
                 </div>
-                <div class="teamlistboxleft">
-                    <div class="teamtitle">team Name</div>
-                    <div class="teamdescription">경력 3년차 이상만 모집합니다.</div>
-                    <div class="languagetag">
-                        <button type="button" class="tagbtn">HTML</button>
-                        <button type="button" class="tagbtn">DB</button>
-                        <button type="button" class="tagbtn">JS</button>
-                    </div>
-                    <div class="teamcreationdate">2022-08-22</div>
+                <div class="teamlistboxright">
+                        <div class="btndiv">
+                            <button class="join btn">팀정보보기</button>
+                        </div>
+                    
+                </div>
             </div>
-            <div class="teamlistboxright">
-                    <div class="btndiv">
-                        <button class="join btn">팀정보보기</button>
-                    </div>
-                
-            </div>
-        </div>
     
-         <div class="teamlistpaging">
-            <!-- 페이지 넘기기 -->
-            <div ng-app="DemoApp" flex layout="column">
-                <div flex ng-controller="MainController" layout="column">
-                  <section layout="row" layout-padding="">
-                    <cl-paging flex cl-pages="paging.total" , cl-steps="6" , cl-page-changed="paging.onPageChanged()" , cl-align="center center" , cl-current-page="paging.current"></cl-paging>
-                  </section>
-                </div>
-            </div>
-         </div>    
+            <div class="teamlistpaging">
+                <!-- 페이지 넘기기 -->
+               페이징처리
+            </div>    
             <!-- ==============작업공간============== -->
         </div>
 
-
-
-        <!-- 상단 스크롤 이동 -->
-        <div class="toTop"><i class="uil uil-arrow-circle-up"></i></div>
 
     </div>
 
@@ -201,7 +191,7 @@
             </div>
 
             <div class="team-content-date-detail">
-                 <a href="">공지사항 더보기</a>
+                 <a href="teamnotice.html">공지사항 더보기</a>
             </div>
 
             
@@ -257,10 +247,12 @@
 
 <div class="modal2-div">
         <div class="teammodal2-div">
-            <div class="toptitle"><p>팀 가입하기</p></div>
+            <div class="toptitle"><p>팀 만들기</p></div>
             <div class="team profile">
                 <form action="">
-                    <input type="file">
+                    팀 로고 첨부파일
+                    <div><img src="이미지가 들어올 것" alt=""><i class="fa-solid fa-user" id="teamlogoicon"></i></div>
+                    <button><input type="file"></button>
                 </form>
             </div>
             <div class="team divone">
@@ -272,29 +264,49 @@
             <div class="team divthr">
                 <input type="text" id="teaminput" placeholder="소개글">
             </div>
-            <div class="team join-btn">
-                <button>팀생성하기</button>
+            <div class="team make-btn">
+                <form action="">
+                    <button>팀생성하기</button>
+                </form>
             </div>
         </div>
     <ion-icon name="close-outline" id="xicon2"></ion-icon>
 </div>
 
+<!-- ====================================팀 가입 모달====================================== -->
+<div class="modal3-div">
+    <div class="teammodal3-div">
+        <div class="toptitle2"><p>팀 가입</p></div>
+        <div class="teamjoincheck"><p>${teamname} 팀에 가입하시겠습니까?</p></div>
+        <div class="team join-btn">
+            <form action="">
+                <button>가입하기</button>
+            </form>
+        </div>
+    </div>
+<ion-icon name="close-outline" id="xicon3"></ion-icon>
+</div>
+
+<!-- ====================================팀 탈퇴 모달====================================== -->
+<div class="modal4-div">
+    <div class="teammodal4-div">
+        <div class="toptitle3"><p>팀 탈퇴</p></div>
+        <div class="teamsecssioncheck"><p>${teamname} 팀을 탈퇴하시겠습니까?ㅠㅠ</p></div>
+        <div class="team secssion-btn">
+            <form action="">
+                <button>탈퇴하기</button>
+            </form>
+        </div>
+    </div>
+<ion-icon name="close-outline" id="xicon4"></ion-icon>
+</div>
 
 </body>
 
 <!-- modal js -->
 <script src="/resource/js/teammodal.js"></script>
-<!-- paging -->
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
-<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.js'></script>
-<script src='https://rawgit.com/Crawlink/material-angular-paging/master/build/dist.min.js'></script>
 <!-- 팀목록 js -->
 <script src="/resource/js/teamlist.js"></script>
 <!-- 메인 js -->
 <script src="/resource/js/BasicFrame.js"></script>
-
 </html>
