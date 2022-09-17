@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 메인 프레임 연동-->
     <link rel="stylesheet" href="/resource/css/BasicFrame.css">
-    <link rel="stylesheet" href="/resource/css/myPage_set.css">
+    <link rel="stylesheet" href="/resource/css/myPage_pay.css">
     <!-- 폰트 불러올라고-->
     <link rel="stylesheet" href="../resource/css/global.css">
     <!-- 유니콘 아이콘 사이트 -->
@@ -43,7 +43,7 @@
                     <li><a href="../view/mypage/mypage.html">마이페이지</a></li>
                     <li><a href="../view/mypage/mypage_pay.html">충전하기</a></li>
                     <li><a href="../view/admin/admin.html">관리자 페이지</a></li>
-                    <li><a href="../view/MainPage.html">로그아웃</a></li>
+                    <li><a href="../MainPage.html">로그아웃</a></li>
                 </ul>
             </div>
             <!-- 알림페이지 -->
@@ -96,62 +96,106 @@
                 *** 테스트시  <div class="main"> 하고 테스트 할 것
             -->
             <!-- ==============작업공간============== -->
-           <!-- 마이 페이지부분 -->
-
-           <div class="myPage">
-                
-            <!-- 프로필사진 -->
-            <p class="mypage_title">프로필사진 변경 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div><input type="file"></div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 닉네임 -->
-            <p class="mypage_title">닉네임 변경 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div><input type="text" name="" id="" value="양광모모"></div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 자기소개 -->
-            <p class="mypage_title">자기소개 수정 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div><input type="text" name="" id="" value="학원댕깁니다"></div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-
-
-            
-            <!-- 컨택트 -->
-            <p class="mypage_title">소셜정보</p>
-            <div class="contact">
-                <div>
-                    <p>github <input type="text" name="" id=""></p>
-                    <p>home <input type="text" name="" id=""></p>
-                    <p>velog <input type="text" name="" id=""></p>
+            <div class="dpContainer">
+                <div class="dpSubBox">
+                  <div class="dpGetPoint">
+                    <h2>보유 픽스</h2>
+                    <span>100 Fix <span>
+                     
+                 </div>
+                 <div class="dpGetPoint">
+                    <h2>해결 픽스</h2>
+                    <span>50 Fix <span>
+                 </div>
+                 <div class="dpGetPoint">
+                    <h2>총 보유 픽스</h2>
+                    <span>150 Fix <span>
+                        <!-- <button>충전</button>
+                        <button>정산</button> -->
+                 </div>
                 </div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
+                <div class="dpListDate"> 
+                    <span>충전/사용/적립/정산 내역 조회</span>
+                    <input type="date"> ~ <input type="date"> 
+                        <select name="pointList">
+                            <option value="" selected="selected">전체 상태</option>
+                            <option value="사용">사용</option>
+                            <option value="적립">적립</option>
+                            <option value="정산">정산</option>
+                            <option value="충전">충전</option>
+                        </select>
+                        <button>조회<i class="fas fa-search"></i></button>
+                    </div>
+                    <h2 class="dpListTitle">2022년 8월</h2>
+                    <div class="dpList">
+                        <div class="dpListLeft">
+                            <div class="dpListCir">
+                                <h2>사용</h2>
+                            </div>
+                        </div>
+                        <div class="dpListMid">
+                            <span>2022.08.12</span>
+                            <span>해결요청 시 사용</span>
+                            <span>HOT FIX 해결 요청</span>
+                        </div>
+                        <div class="dpListRight">
+                            <span>-50Fix</span>
+                            <button>내역삭제</button>
+                        </div>
+                    </div> 
+                    <div class="dpList save">
+                        <div class="dpListLeft">
+                            <div class="dpListCir">
+                                <h2>적립</h2>
+                            </div>
+                        </div>
+                        <div class="dpListMid">
+                            <span>2022.08.22</span>
+                            <span>해결완료 시 적립</span>
+                            <span>HOT FIX 해결 완료</span>
+                        </div>
+                        <div class="dpListRight">
+                            <span>+100Fix</span>
+                            <button>내역삭제</button>
+                        </div>
+                    </div> 
+                    <h2 class="dpListTitle">2022년 9월</h2>
+                    <div class="dpList charge">
+                        <div class="dpListLeft">
+                            <div class="dpListCir">
+                                <h2>충전</h2>
+                            </div>
+                        </div>
+                        <div class="dpListMid">
+                            <span>2022.09.12</span>
+                            <span>충전</span>
+                            <span>FIX 충전</span>
+                        </div>
+                        <div class="dpListRight">
+                            <span>+50Fix</span>
+                            <button>내역삭제</button>
+                        </div>
+                    </div> 
+                    <div class="dpList get">
+                        <div class="dpListLeft">
+                            <div class="dpListCir">
+                                <h2>정산</h2>
+                            </div>
+                        </div>
+                        <div class="dpListMid">
+                            <span>2022.09.12</span>
+                            <span>정산</span>
+                            <span>FIX 정산</span>
+                        </div>
+                        <div class="dpListRight">
+                            <span>-150Fix</span>
+                            <button>내역삭제</button>
+                        </div>
+                    </div> 
             </div>
-            <!-- 계좌정보 -->
-            <p class="mypage_title">계좌정보 변경 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div>신한은행 110-427-341899</div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 알림설정 -->
-            <p class="mypage_title">알림 설정 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div>모든 알림끄기</div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 탈퇴 -->
-            <p class="mypage_title">탈퇴하기 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div>탈퇴시 회원의 모든정보가 삭제되며, 출금 처리를 끝내주셔아합니다</div>
-                <div>기부하고 탈퇴하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
+            
+            
 
-
-        </div>
             
             <!-- ==============작업공간============== -->
         </div>

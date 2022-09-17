@@ -16,237 +16,14 @@
     --btn-color:rgba(248, 58, 37, .9);
 }
 
-.container{
-    padding-left: 10%;
-    padding-right: 10%;
-    /* padding: 20px 0px; */
-    padding-top: 2%;
-
-  }
-
-/* basicFrame */
-/* =============헤더 전체틀============ */
-.common_header{
-    width: 100%;
-    height: 8vh;
-    min-width: 1280px;
-
-    /* fixed 주석 처리하면 원래상태로 바뀜 */
-    position: fixed;
-    z-index: 100;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: solid 2px #ccc; */
-
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
-}
-
-
-
-/* 헤더 왼쪽 */
-.common_header_left{
-    width: 10%;
-    height: 100%;
-    /* border: 2px solid pink; */
-
-    /* color: black; */
-}
-.common_header_left>img{
-    width: 80%;
-    height: 100%;
-
-    object-fit: contain;
-}
-/* 헤더 가운데 */
-.common_header_center{
-    width: 60%;
-    height: 100%;
-    /* border: 2px solid pink; */
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* 헤더 카테고리 */
-.header_menu{
-    display: flex;
-    align-items: center;
-    line-height: 45px;
-    margin: 0; padding: 0;
-}
-.header_menu>li{
-    width: 130px;
-    height: 50px;
-    /* border: 2px solid pink; */
-
-
-    font-size: 20px;
-    list-style-type: none;
-    text-align: center;
-}
-
-.header_menu>li>a{
-    color:rgba(25, 25, 25, 1) ;
-    text-decoration: none;
-}
-
-.header_menu>li>a:hover{
-    color:  rgba(248,58,37,1);
-}
-
-/* 헤더 오른쪽 */
-.common_header_right{
-    width: 10%;
-    height: 100%;
-    /* border: 2px solid pink; */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* 마이페이지, 알람기능 */
-
-
-.user,.alarm{
-    width: 50%;
-    height: 100%;
-
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    /* border: solid 2px red;   */
-
-}
-
-.user>div,.alarm>div{
-    width: 50px;
-    height: 50px;
-    /* background-color: red; */
-   /* background-image: url(/resource/img/alarm.png); */
-    border: solid 2px red;  
-    /* border-radius: 50%; */
-   
-    position: absolute;
-    
-    top: 10px;
-    left: 20px;
-    
-
-    
-    
-}
-/* 헤더 유저 드롭다운 */
-.user>ul{   
-    border: solid 2px #ccc;
-    background-color: white;
-    border-radius: var(--border-radius);
-    margin-top: 20px;
-    margin: 0; padding: 0;
-
-    width: 200px;
-    height: 300px;
-
-    position: absolute;
-    z-index: 100;
-    top: 75px;
-    right: -98px;
-
-    display: none;
-}
-
-
-
-.user>ul>li,.alarm>ul>li{   
-    /* border: solid 2px red;   */
-
-    width: 100%;
-    height: 20%;
-
-    list-style-type: none;
-    line-height: 40px;
-    padding-left: 10px;
- 
-}
-/* 헤더 알람 드롭다운 */
-.alarm>ul{   
-    border: solid 2px #ccc;
-    background-color: white;
-    border-radius: var(--border-radius);
-    margin-top: 20px;
-    margin: 0; padding: 0;
-
-    width: 400px;
-    height: 300px;
-
-    position: absolute;
-    z-index: 100;
-    top: 75px;
-    right: 0px;
-
-    display: none;
-    overflow-y: scroll;
-}
-
-.alarm>ul>li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.alarm>ul>li>span:nth-child(1){
-    /* border: 1px solid blue; */
-    width: 250px;
-    height: 30px;
-    font-size: 15px;
-    /* text-align: center; */
-    overflow: hidden;
-
-    line-height: 30px;
-}
-.alarm>ul>li>span:nth-child(2){
-    border: 1px solid #ccc;
-    background-color: pink;
-    border-radius: var(--border-radius);
-    width: 50px;
-    height: 30px;   
-    
-    font-size: 10px;
-    text-align: center;
-
-    padding: 0;
-    line-height: 30px;
-}
-
 /* ================================================ */
-/* 메인 섹션(조원 작업존) */
-.common_section{
-    width: 100%;
-    height: 150vh;
-    background-color: white;
-    min-width: 1280px;
 
-    /* border: 3px solid red; */
-    
-
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* 왼쪽 사이드 */
 .sideLeft{
     background-color: white;
     /* border: solid 2px var(--ex-border-color); */
-    height: 135vh;
+    height: 150vh;
     width: 15%;
     
     border-radius: 10px;
@@ -257,51 +34,12 @@
 
 /* 메인섹션 */
 .main{
-    background-color: white;
     border: solid 2px #ccc;
-    border-radius: 10px;
-    height: 150vh;
-    height: 90%;
-    width: 70%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
-
-
-}
-
-/* 오른쪽 사이드 */
-.sideRight{
-    background-color: white;
-    /* border: solid 2px var(--ex-border-color); */
-    /* height: 150vh; */
-    width: 15%;
-}
-
-/* ====================푸터=================== */
-.common_footer{
-    width: 100%;
-    height: 15vh;
-    min-width: 1280px;
-    border: solid 2px #ccc;
-    background-color: white;
+    border-radius: 10px;
 }
 
 
-/* ==================잡기능 모음집============== */
-/* 상단 이동 위치 조절(x,y) */
-.toTop{
-    width: 50px;
-    height: 50px;
-    /* background-color: brown; */
-    text-align: center;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-/* 상단 이동 아이콘 */
-.uil-arrow-circle-up{
-    font-size: 40px;
-}
 
 /* ============================= */
 /* 내 프로필 및 마이페이지 내역  */
@@ -323,6 +61,8 @@
     border: solid 2px #ccc;
     border-radius: 10px;
 }
+
+
 
 .myList>ul{
     margin: 0; padding: 0;
@@ -359,6 +99,11 @@
 
    background-image: url(/resource/img/pepe.png);
    border-radius: 50%;
+}
+
+.myli>a{
+    color: black;
+    text-decoration-line: none;
 }
 
 

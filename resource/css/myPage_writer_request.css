@@ -124,11 +124,6 @@ input[type="checkbox"]{
 
 /* ================================= */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* 게시판 전체 컨테이너 */
 .board_container {
     width: 90%;
@@ -214,97 +209,215 @@ input[type="checkbox"]{
     color: black;
 }
 
-/* 게시글 메인 컨텐츠 시작 */
-.board_main {
+/* ==============게시판 내용=================== */
+.RmContainer {
+    border: 1px solid black;
     width: 100%;
+    height: 100%;
+}
+.RmHeader {
+    text-align: center;
+    line-height: 100px;
     height: 100px;
-    margin-bottom: 20px;
-
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
-    border-radius: 10px;
 }
-.board_header {
-    height: 30px;
-    line-height: 30px;
+.RmHeader > h1 {
+    font-size: 30px;
+    font-weight: bolder;
 }
-.board_write {
-    width: 400px;
-    float: left;
+/* 버튼, 서치바 */
+.RmSubtitle {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
 }
-
-.board_write>span {
-    margin: 2px;
-}
-
-.board_view {
-    float: right;
+.RmSubtitle button {
+    padding: 5px 20px;
 }
 
-.board_content {
-    height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-    
-   
+/* 요청서 작성 */
+.RmWriteRequest {
+    width: 33%;
 }
-.board_content > span a {
-    text-decoration: none;
+.RmWriteRequest > button {
+    border: none;
+    background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* 전체 드롭다운 */
+.Rmlist {
+    width: 33%;
+    position: relative;
+	display: inline-block;
+    text-align: right;
+}
+.Rmlist > select {
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+    border-radius: 5px;
+    color: white;
+}
+.Rmlist > select > option {
     color: black;
 }
-.board_tag>span {
-    display: inline-block;
-    width: 50px;
+
+/* 서치바 */
+.RmSearchbar {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 33%;
+    padding: 5px;
+}
+.RmSearchbar > i {
+    padding-right: 5px;
+}
+.RmSearchbar>input {
+    border: none;
+    outline: none;
+}
+
+
+/* 해결 게시판 */
+.RmBoard {
+    margin: 30px auto;
+    width: 95%;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+
+}
+/* 해결 게시판 왼쪽 */
+.RmBoardLeft {
+    width: 70%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    border-right: 1px solid #aaa;
+}
+
+.RmBoardLeft > p {
+    margin: 15px 20px;
+}
+.RmBoardLeft > p:nth-child(1) {
+    font-size: 30px;
+    color: red;
+}
+/* 해결 게시판 오른쪽 */
+.RmBoardRight {
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 30%;
+}
+.RmBoardRight > p {
+    margin: 5px 30px;
+}
+.RmBoardRight > button {
+    margin: 10px 30px;
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    background-color: rgb(234, 126, 18);
+    border-radius: 5px;
+}
+/* --------모달------------- */
+/* 스크롤막기 */
+html, body {
+    overflow: auto;
+    height: 100%;
+  }
+
+.RmContainer {
+    position: relative;
+}
+
+.RmModal_wrap {
+    display: none;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    border: 2px solid black;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#eee;
+    z-index: 2;
+    overflow: auto;
+    
+}
+.RmModal_background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.5);
+    top:0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+.RmModal_close {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.RmModal_close i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+}
+
+.RmModal_wrap .ModalText {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.modal_close .closeImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ModalText > h1 {
+    font-size: 35px;
+    color: red;
     text-align: center;
-    margin: 5px;
 }
-
-
-/* 페이징 */
-.page_wrap {
-	text-align:center;
-	font-size:0;
- }
-.page_nation {
-	display:inline-block;
+.ModalHeader {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.page_nation .none {
-	display:none;
+.ModalHeader > p:nth-child(1) {
+    margin-right: 10px;
 }
-.page_nation a {
-	display:block;
-	margin:0 3px;
-	float:left;
-	border:1px solid #e6e6e6;
-	width:28px;
-	height:28px;
-	line-height:28px;
-	text-align:center;
-	background-color:#fff;
-	font-size:13px;
-	color:#999999;
-	text-decoration:none;
+.Modaltitle > p {
+    padding: 10px;
 }
-.page_nation .arrow {
-	border:1px solid #ccc;
+.ModalCon img {
+    margin: 10px 0px;
+    width: 100%;
 }
-.page_nation .pprev {
-	background:#f8f8f8 url('/img/arrow/page_pprev.png') no-repeat center center;
-	margin-left:0;
+.ModalFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
 }
-.page_nation .prev {
-	background:#f8f8f8 url('/img/arrow/page_prev.png') no-repeat center center;
-	margin-right:7px;
-}
-.page_nation .next {
-	background:#f8f8f8 url('/img/arrow/page_next.png') no-repeat center center;
-	margin-left:7px;
-}
-.page_nation .nnext {
-	background:#f8f8f8 url('/img/arrow/page_nnext.png') no-repeat center center;
-	margin-right:0;
-}
-.page_nation a.active {
-	background-color:#42454c;
-	color:#fff;
-	border:1px solid #42454c;
+.ModalFooter >button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    background-color: rgb(234, 126, 18);
 }
