@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rankingcontanier{
+    width: 100%;
+    height: 100%;
+}
+
+.category{
+    height: 10%;
+    text-align: center;
+    line-height: 10vh;
+}
+.rankingtypediv{
+    border: 1px solid gray;
+    width: 100%;
+    height: 5%;
+    display: flex;
+}
+.rankingtype{
+    border: 1px solid gray;
+    width: 34%;
+}
+.rankingserach{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+.rankingtopdiv{
+    border: 3px solid black;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    /* 나중에 높이 조절 */
+    height: 20%;
+}
+.rankingtop{
+    border: 3px solid gold;
+    width: 20%;
+    margin: 0 1%;
+}
+.rankingdiv{
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    /* 나중에 높이 조절 */
+    height: 50%;
+}
+.rankingdiv table{
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+.rankingdiv table td{
+    border: 3px solid black;
+}
+.rankingpaging{
+    border: 1px solid black;
+    /* 나중에 높이 조절 */
+    height: 5%;
+}
