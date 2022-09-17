@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 메인 프레임 연동-->
     <link rel="stylesheet" href="/resource/css/BasicFrame.css">
-    <link rel="stylesheet" href="/resource/css/myPage_set.css">
+    <link rel="stylesheet" href="/resource/css/myPage_comments.css">
     <!-- 폰트 불러올라고-->
     <link rel="stylesheet" href="../resource/css/global.css">
     <!-- 유니콘 아이콘 사이트 -->
@@ -96,60 +96,97 @@
                 *** 테스트시  <div class="main"> 하고 테스트 할 것
             -->
             <!-- ==============작업공간============== -->
-           <!-- 마이 페이지부분 -->
-
-           <div class="myPage">
-                
-            <!-- 프로필사진 -->
-            <p class="mypage_title">프로필사진 변경 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div><input type="file"></div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 닉네임 -->
-            <p class="mypage_title">닉네임 변경 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div><input type="text" name="" id="" value="양광모모"></div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 자기소개 -->
-            <p class="mypage_title">자기소개 수정 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div><input type="text" name="" id="" value="학원댕깁니다"></div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-
-
-            
-            <!-- 컨택트 -->
-            <p class="mypage_title">소셜정보</p>
-            <div class="contact">
-                <div>
-                    <p>github <input type="text" name="" id=""></p>
-                    <p>home <input type="text" name="" id=""></p>
-                    <p>velog <input type="text" name="" id=""></p>
+            <div class="board_container">
+                <div class="board_title">
+                    <h1>나의 작성글</h1>
                 </div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 계좌정보 -->
-            <p class="mypage_title">계좌정보 변경 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div>신한은행 110-427-341899</div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 알림설정 -->
-            <p class="mypage_title">알림 설정 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div>모든 알림끄기</div>
-                <div>수정하기 <i class="uil uil-angle-right-b"></i></div>
-            </div>
-            <!-- 탈퇴 -->
-            <p class="mypage_title">탈퇴하기 <i class="uil uil-question-circle"></i></p>
-            <div class="comition_1">
-                <div>탈퇴시 회원의 모든정보가 삭제되며, 출금 처리를 끝내주셔아합니다</div>
-                <div>기부하고 탈퇴하기 <i class="uil uil-angle-right-b"></i></div>
+                <div class="board_category">
+                    <ul>
+                        <li><a href="../mypage/mypage_writer.html">작성글</a></li>
+                        <li><a href="../mypage/mypage_comments.html">댓글</a></li>
+                        <li><a href="../mypage/mypage_writer_request.html">해결요청 내역</a></li>
+                        <li><a href="../mypage/mypage_writer_result.html">해결중인</a></li>
+                    </ul>
+                 </div>
+
+                <div class="board_nav">
+                    <button class="cancle">댓글 삭제하기</button>
+                    <div class="board_nav_search">
+                        <i class="uil uil-search"></i><input type="text" placeholder="검색">
+                    </div>
+                     <div class="board_nav_btn">
+                        <select name="">
+                            <option value="">최신순</option>
+                            <option value="">조회순</option>
+                        </select>
+                    </div>
+                   
+                </div> 
+                <!-- 게시글 삭제 박스 -->
+                <p><input type="checkbox"></p>
+                <div class="board_main">
+                    <div class="board_header">
+                        <div class="board_write">
+                            <span><i class="fas fa-feather-alt"></i></span>
+                            <span>200<i class="fas fa-bolt"></i></span>
+                            <span>나나콘</span>
+                            <span>약 5시간전</span>
+                        </div>
+                        <div class="board_view">
+                            <span>0 조회수</span>
+                            <span>1 추천수</span>
+                        </div>
+                    </div>
+                    <div class="board_content">
+                        <span> <a href="detailBoard.html">Java 개념을 잘 모르겠습니다 알려주세요</a></span>
+                    </div>
+                    <div class="board_tag">
+                        <span>#excel</span>
+                        <span>#java</span>
+                        <span>#js</span>
+                    </div>
+                </div> 
+                <!-- 게시글 삭제 박스 -->
+                <p><input type="checkbox"></p>
+                <div class="board_main">
+                    <div class="board_header">
+                        <div class="board_write">
+                            <span><i class="fas fa-feather-alt"></i></span>
+                            <span>200<i class="fas fa-bolt"></i></span>
+                            <span>나나콘</span>
+                            <span>약 5시간전</span>
+                        </div>
+                        <div class="board_view">
+                            <span>0 조회수</span>
+                            <span>1 추천수</span>
+                        </div>
+                    </div>  
+                    <div class="board_content">
+                        <span> <a href="detailBoard.html">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis consequatur sunt excepturi ipsum incidunt deserunt itaque fugiat illo saepe, magnam facere voluptas. Consequatur, debitis! Accusantium mollitia animi eaque quo asperiores.</a> </span>
+                    </div>
+                    <div class="board_tag">
+                        <span>#excel</span>
+                        <span>#java</span>
+                        <span>#js</span>
+                    </div>
+                </div> 
+              
+                  
+                
+                  
             </div>
 
+            <div class="pageWrap">
+                <!-- 페이지 넘기기 -->
+                <div ng-app="DemoApp" flex layout="column">
+                    <div flex ng-controller="MainController" layout="column">
+                      <section layout="row" layout-padding="">
+                        <cl-paging flex cl-pages="paging.total" , cl-steps="6" , cl-page-changed="paging.onPageChanged()" , cl-align="center center" , cl-current-page="paging.current"></cl-paging>
+                      </section>
+                    </div>
+                </div>
+             </div>    
+    
 
         </div>
             
@@ -168,8 +205,21 @@
     <div class="common_footer">푸터임다 d </div>
 
 </body>
+<script>
 
+    let cancle = document.querySelector(".cancle");
+    cancle.addEventListener('click',function(){
+        if (confirm("정말 삭제하시겠습니까?") == true){ 
+        //true는 확인버튼을 눌렀을 때 코드 작성
+        console.log("완료되었습니다.");
+        }else{
+        // false는 취소버튼을 눌렀을 때, 취소됨
+        console.log("취소되었습니다");
+ }
+    })
+</script>
 <script src="/resource/js/BasicFrame.js"></script>
 <script src="/resource/js/mypage_new_real.js"></script>
+<script src="/resource/js/board.js"></script>
 
 </html>
