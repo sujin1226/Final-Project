@@ -1,8 +1,8 @@
 
-
-
-// header center 카테고리 호버시 함수
-let myPage_side_text = document.querySelectorAll(".myli");
+// 22-07-17 HIKARI
+// side bar 마이페이지 텍스트 호버 함수
+// 해당 함수는 mypage 폴더내의 모든 파일들과 연관있음
+let myPage_side_text = document.querySelectorAll(".myli>a");
 textHover(myPage_side_text);
 
 
