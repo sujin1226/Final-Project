@@ -268,10 +268,9 @@
 .main{
     background-color: white;
     border: solid 2px var(--ex-border-color);
-    /* height: 150vh; */
+    height: 150vh;
     /* height: 100%; */
     width: 70%;
-
 }
 
 /* 오른쪽 사이드 */
