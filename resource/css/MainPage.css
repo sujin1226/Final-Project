@@ -9,12 +9,12 @@
 /* ################################# 메인섹션관리  ################################# */
 
 
-.main {
+.mains {
     margin: 0 auto;
     
 
-    width: 100%;
-
+    width: 70%;
+    background-color: white;
 
     display: grid;
     grid-template-areas: 
@@ -22,6 +22,7 @@
     "second_preview";
     padding: 2vh 0 0 0;
     /* border: 5px solid green; */
+    border: none;
 }
 
 #main_big_preview {
