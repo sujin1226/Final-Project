@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../../resources/css/global.css">
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <!-- 폰트어썸 사이트 -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>HotFix</title>
 </head>
 
@@ -121,7 +123,14 @@
                     <div class="board_nav">
                         <button class="cancle">뭐넣지</button>
                         <div class="board_nav_search">
-                            <i class="uil uil-search"></i><input type="text" placeholder="검색">
+                            <div class="search">
+                                <div class="search-box">
+                                    <form method="POST">
+                                      <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요" name="keyword" />
+                                      <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="board_nav_btn">
                             <select name="">

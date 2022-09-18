@@ -11,6 +11,8 @@
 
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- 폰트어썸 사이트 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
      <!-- paging -->
    <link rel='stylesheet' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0-rc.5/angular-material.css'>
     <link rel="stylesheet" href="../../resources/css/board.css">
@@ -85,6 +87,7 @@
                 <div class="board_title">
                     <h1>일상</h1>
                 </div>
+
                 <div class="board_category">
                    <ul>
                     <li><a href="lifeBoard.html">일상</a></li>
@@ -98,7 +101,12 @@
                 <div class="board_nav">
                     <button onclick="location.href='boardWriteForm.html' ">작성하기</button>
                     <div class="board_nav_search">
-                        <i class="uil uil-search"></i><input type="text" placeholder="검색">
+                            <div class="search-box">
+                                <form method="POST">
+                                  <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요" name="keyword" />
+                                  <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                            </div>
                     </div>
                      <div class="board_nav_btn">
                         <select name="">
@@ -107,7 +115,6 @@
                             <option value="">추천순</option>
                         </select>
                     </div>
-                   
                 </div> 
 
                 <div class="board_main">

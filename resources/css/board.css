@@ -1,6 +1,7 @@
 :root{
-    --border-radius: 10px;
-    --btn-color:rgba(248, 58, 37, .9);
+    --teamlist-border: 1px solid gainsboro;
+    --border-btn-radius: 5px;
+    --btn-color: rgba(255, 95, 47, 0.906);
 }
 
 
@@ -52,11 +53,64 @@
 /* 작성하기, 검색, 최신  */
 .board_nav {
     width: 100%;
-    height: 50px;
+    height: 5vh;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    /* border: 1px solid red; */
+}
+/* 검색기능 틀 */
+.board_nav_search{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+.search{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* border: 1px solid green; */
+}
+/* 검색창 */
+.search-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box form{
+    width: 65%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.search-box input[type="text"]{
+    border: var(--teamlist-border);
+    border-radius: 50px;
+    width: 65%;
+    height: 100%;
+    padding: 0 20px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+ }
+.search-box form input[type="text"]:focus{
+    outline: none;
+}
+.searchbtn{
+    position: relative;
+    right: 6%;
+    
+    border: none;
+    background-color: white;
 }
 
 .board_nav>button {
@@ -65,27 +119,14 @@
     padding: 10px 20px;
     border: none;
     background-color: var(--btn-color);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
 }
-
-.board_nav_search {
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-
-.board_nav_search>input {
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-}
-
 
 .board_nav_btn > select {
     padding: 10px 20px;
     border: none;
     background-color: var(--btn-color);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
     color: white;
 }
 .board_nav_btn > select > option {
