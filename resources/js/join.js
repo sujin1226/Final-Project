@@ -1,6 +1,6 @@
 // ========== 정규표현식 ========== //
 // 아이디 : 숫자와 영문(대문자or소문자) 7자~15자이내
-const ID_CHECK = /^[A-Za-z0-9]{7,15}$/; 
+const ID_CHECK = /^(?=.*\d{1,15})(?=.*[a-zA-Z]{2,15}).{7,15}$/;
 // 비밀번호 : 숫자와 특수문자 각 1개 이상, 영문은 2개 이상 사용하여 9자~20자이내
 const PW_CHECK = /^(?=.*\d{1,20})(?=.*[~`!@#$%\^&*()-+=]{1,20})(?=.*[a-zA-Z]{2,20}).{9,20}$/;
 // 이메일 : 처음에 숫자 또는 영문자 한개는 있어야하며 
@@ -8,6 +8,8 @@ const PW_CHECK = /^(?=.*\d{1,20})(?=.*[~`!@#$%\^&*()-+=]{1,20})(?=.*[a-zA-Z]{2,2
 const EMAIL_CHECK = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i
 // 이름 유효성 검사
 const NAME_CHECK = /^[가-힣]{2,15}$/;
+// 특수문자 유효성 검사 (특수문자는 제외)
+const NICK_CHECK = /^[\w\Wㄱ-ㅎㅏ-ㅣ가-힣]{2,20}$/;
 
 // ========== 회원가입 정보입력란 변수선언 ========== //
 let hotID = document.getElementById('hotID');
@@ -16,6 +18,9 @@ let hotPW_Check = document.getElementById('hotPW_Check');
 let hotEmail = document.getElementById('hotEmail');
 let hotName = document.getElementById('hotName');
 let hotNick = document.getElementById('hotNick');
+let phone1 = document.getElementById('phone1');
+let phone2 = document.getElementById('phone2');
+let phone3 = document.getElementById('phone3');
 
 // ========== 조건에 맞지 않을 경우 innerHTML 표시영역 변수선언 ========== //
 let hotID_alert = document.getElementById('hotID_alert');
@@ -24,6 +29,7 @@ let hotPWCK_alert = document.getElementById('hotPWCK_alert');
 let hotEM_alert = document.getElementById('hotEM_alert');
 let hotNM_alert = document.getElementById('hotNM_alert');
 let hotNK_alert = document.getElementById('hotNK_alert');
+let hotPH_alert = document.getElementById('hotPH_alert');
 
 let joinBtn = document.getElementById('join_submit');
 
@@ -99,9 +105,36 @@ function checkNull(){
     if (hotName.value.length>=1) {
         hotNM_alert.innerHTML = '';
     }
-    // if (checkNull() == true) {
-    //     location.href = "/login.html"; 
-    // }
-    // 로그인페이지 연결안됨 추후 수정에정
-}   
-    
+
+    if (hotNick.value==='') {
+        hotNK_alert.innerHTML = '<font color=red>&nbsp 닉네임을 입력해주세요.</font>';
+        hotNick.focus();
+        return false;
+    }
+    if (!NICK_CHECK.test(hotNick.value)) {
+        hotNK_alert.innerHTML = '<font color=red>&nbsp 특수문자를 제외한 2~20자 이내로 입력해주세요.</font>';
+        hotNick.focus();
+        return false;
+    }
+    if (hotNick.value.length>=1) {
+        hotNK_alert.innerHTML = '';
+    }
+
+    if (phone1.value==='' || phone2.value==='' || phone3.value==='') {
+        hotPH_alert.innerHTML = '<font color=red>&nbsp 핸드폰 번호를 입력해주세요.</font>';
+        phone1.focus();
+        if (phone1.value!=='' && phone2.value==='' && phone3.value==='') {
+            phone2.focus();
+            return false;
+        } else if (phone1.value!=='' && phone2.value!=='' && phone3.value==='') {
+                phone3.focus();
+                return false;
+            }
+    }
+    if (phone1.value.length==3 || phone2.value.length==4 || phone3.value.length==4) {
+        hotPH_alert.innerHTML = '';
+    }   return false;
+        
+} 
+
+// 2022.09.18 유효성 검사 80% 완료 추가 보완중

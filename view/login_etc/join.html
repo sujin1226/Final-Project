@@ -13,13 +13,13 @@
     <div class="join_Container">
         <div class="join_Div">
             <div class="joinLogo">
-                <img src="../../resources/img/HOT.png" alt="" srcset="">
+                <img src="/resource/img/HOT.png" alt="" srcset="">
             </div>
             <div class="join_header">
                 <h1>핫픽스에 오신것을 환영합니다.</h1>
             </div>
             <div class="join_Login">
-                이미 회원이신가요? &nbsp;<a href="login.html">로그인 하기</a>
+                이미 회원이신가요? &nbsp;<a href="/view/login_etc/login.html">로그인 하기</a>
             </div>
 
             <!-- ========== 회원가입 정보입력 영역 ========== -->
@@ -51,7 +51,7 @@
                 </div>
                 <div class="join_nickname">
                     <h4>닉네임</h4>
-                    <input type="text" name="hotNick" id="hotNick" placeholder="영문, 한글, 숫자 조합 20자 이내">
+                    <input type="text" name="hotNick" id="hotNick" placeholder="특수문자 제외 2~20자 이내">
                     <p id="hotNK_alert"></p>
                 </div>
                 <div class="join_phone">
@@ -59,6 +59,7 @@
                     <input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
                     <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
                     <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
+                    <p id="hotPH_alert"></p>
                     <input id="phone_check" type="submit" value="인증번호 받기">
                     <input id="number_Write" type="text" name="" placeholder="인증번호를 입력하세요">
                     <input id="number_Check" type="button" value="확인">
