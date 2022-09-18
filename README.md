@@ -18,4 +18,4 @@ PUSH TEST "0917 2348i SEO" "절대경로 설정 및 링크 통일 작업"
 
 
 PUSH TEST "0917 2105i SU"
-
+PUSH TEST "0918 2105i SUGE"
