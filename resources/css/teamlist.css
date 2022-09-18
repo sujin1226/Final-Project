@@ -3,9 +3,10 @@
     --main-text-color: rgb(247,247,247);
 
     --teamlist-border: 1px solid gainsboro;
-    --border-radius: 10px;
     --btn-hover-gray-color:rgb(190, 189, 189);
-    --btn-color:rgba(248, 58, 37, .9);
+
+    --border-btn-radius: 5px;
+    --btn-color: rgba(255, 95, 47, 0.906);
 
 }
 /* a태그 기본 설정 */
@@ -25,13 +26,15 @@
 }
 /* 검색기능 틀 */
 .teamlistsearch{
-    border-bottom: var(--teamlist-border);
     width: 100%;
-    height: 15vh;
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
 }
 .search{
     width: 100%;
-    height: 50%;
+    height: 55%;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -39,15 +42,15 @@
 /* 검색창 */
 .search-box{
     width: 90%;
-    height: 50%;
+    height: 75%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-left: 70px;
 }
 .search-box form{
     width: 45%;
-    height: 100%;
+    height: 95%;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -86,11 +89,12 @@ input:-webkit-autofill {
     color: white;
     background: var(--btn-color);
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
     cursor: pointer;
 }
 /* 팀목록 가장 큰 틀 */
 .teamlistbox{
+    border-top: var(--teamlist-border);
     border-bottom: var(--teamlist-border);
     display: flex;
     width: 100%;
@@ -134,7 +138,7 @@ input:-webkit-autofill {
 /* 태그 */
 .tagbtn{
     background-color: gainsboro;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
     border: none;
     padding: 5px 1vh;
 }
@@ -156,13 +160,14 @@ input:-webkit-autofill {
 /* 버튼들 */
 .btn{
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
     padding: 10px 20px; 
 }
 /* 모집인원 */
 .join{
     background: var(--btn-color);
     color: var(--main-text-color);
+    cursor: pointer;
 }
 /* 페이징 */
 .teamlistpaging{

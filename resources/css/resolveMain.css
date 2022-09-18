@@ -1,11 +1,11 @@
 :root{
-    --border-radius: 10px;
-    --btn-color:rgba(248, 58, 37, .9);
+    --teamlist-border: 1px solid gainsboro;
+    --border-btn-radius: 5px;
+    --btn-color: rgba(255, 95, 47, 0.906);
 }
 
 
 .RmContainer {
-    border: 1px solid black;
     width: 100%;
     height: 100%;
 }
@@ -26,8 +26,55 @@
     justify-content: center;
     margin: 25px;
 }
-.RmSubtitle button {
-    padding: 5px 20px;
+/* 검색기능 틀 */
+.RmSearchbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* 검색창 */
+.search-box{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.search-box form{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+.search-box input[type="text"]{
+    border: var(--teamlist-border);
+    border-radius: 50px;
+    width: 80%;
+    height: 100%;
+    padding: 0 20px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+ }
+.search-box form input[type="text"]:focus{
+    outline: none;
+}
+.searchbtn{
+    position: relative;
+    right: 8%;
+    
+    border: none;
+    background-color: white;
 }
 
 /* 요청서 작성 */
@@ -38,7 +85,7 @@
     border: none;
     background: var(--btn-color);
     color: white;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
     padding: 10px 20px;
 }
 
@@ -53,29 +100,13 @@
     padding: 10px 20px;
     border: none;
     background: var(--btn-color);
-    border-radius: 10px;
+    border-radius: var(--border-btn-radius);
     color: white;
 }
 .Rmlist > select > option {
     background: white;
     color: black;
 }
-
-/* 서치바 */
-.RmSearchbar {
-    border: 1px solid black;
-    border-radius: 15px;
-    width: 33%;
-    padding: 5px;
-}
-.RmSearchbar > i {
-    padding-right: 5px;
-}
-.RmSearchbar>input {
-    border: none;
-    outline: none;
-}
-
 
 /* 해결 게시판 */
 .RmBoard {
@@ -120,7 +151,7 @@
     border: none;
     color: white;
     background-color: var(--btn-color);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-btn-radius);
 }
 /* --------모달------------- */
 /* 스크롤막기 */
