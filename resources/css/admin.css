@@ -1,17 +1,8 @@
-
-.container{
-    padding-left: 10%;
-    padding-right: 10%;
-    /* padding: 20px 0px; */
-    padding-top: 2%;
-
-  }
-
 /* ================================================ */
 /* 메인 섹션(조원 작업존) */
 .common_section{
     width: 100%;
-    height: 150vh;
+    /* height: 150vh; */
     background-color: white;
     min-width: 1280px;
     /* border: 3px solid red; */
@@ -19,15 +10,14 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 /* 왼쪽 사이드 */
 .sideLeft{
     background-color: white;
-    /* border: solid 2px var(--ex-border-color); */
+    border: solid 2px var(--ex-border-color);
     border: solid 2px #ccc;
-    height: 135vh;
+    height: 150vh;
     width: 15%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
@@ -40,58 +30,9 @@
     border: solid 2px #ccc;
     border-radius: 10px;
     height: 150vh;
-    height: 90%;
     width: 70%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 3px 0px;
-
 }
-
-/* 오른쪽 사이드 */
-.sideRight{
-    background-color: white;
-    /* border: solid 2px var(--ex-border-color); */
-    /* height: 150vh; */
-    width: 15%;
-}
-
-/* ====================푸터=================== */
-.common_footer{
-    width: 100%;
-    height: 15vh;
-    min-width: 1280px;
-    border: solid 2px #ccc;
-    background-color: white;
-}
-
-
-/* ==================잡기능 모음집============== */
-/* 상단 이동 위치 조절(x,y) */
-.toTop{
-    width: 50px;
-    height: 50px;
-    /* background-color: brown; */
-    text-align: center;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-}
-
-/* 상단 이동 아이콘 */
-.uil-arrow-circle-up{
-    font-size: 40px;
-}
-
-/* ============================= */
-/* 내 프로필 및 마이페이지 내역  */
-.mySection{
-    width: 100%;
-    height: 150vh; 
-    border: solid 3px var(--ex-border-color);
-    display: flex;
-    
-} */
-
-/* ========== 관리자페이지 2022-08-22 bear ========== */
 
 a {
     /* text-decoration: none; */
@@ -101,7 +42,7 @@ a {
 /* 관리자페이지 왼쪽 카테고리 */
 .adminList {
     width: 100%;
-    height: 135vh;
+    height: 100%;
     text-align: center;
     /* border: 2px solid blue; */
 }
@@ -162,7 +103,7 @@ a {
 /* 관리자페이지 각 카테고리별 세부사항 수치표시버튼 */
 .adminCbtn, .admin_Membtn, .admin_Boardbtn, 
 .admin_RepBtn, .admin_AskBtn {
-    width: 100px;
+    width: 105px;
     height: 35px;
     border: none;
     margin-left: 8px;
@@ -191,8 +132,6 @@ a {
     background: rgb(238, 236, 236);
     cursor: pointer;
 }
-
-
 
 /* 카테고리별 정보 관리영역 */
 .admin_Customer {
@@ -225,8 +164,3 @@ a {
     border: 1px solid grey;
 }
 
-/* 신고관리 영역  */
-
-
-
-/* 게시판관리 영역 */
