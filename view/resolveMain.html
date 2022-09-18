@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../resources/css/resolveMain.css">
     <!-- 유니콘 아이콘 사이트 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+   <!-- 폰트어썸 아이콘 사이트 -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>HotFix</title>
 </head>
 
@@ -90,9 +92,17 @@
                         </div>
 
                         <!-- 서치바 -->
-                        <div class="RmSearchbar">
-                            <i class="uil uil-search"></i><input type="text" placeholder="검색">
-                        </div>
+                            <div class="RmSearchbar">
+                                <div class="search">
+                                    <div class="search-box">
+                                        <form method="POST">
+                                          <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요" name="keyword" />
+                                          <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
                         <!-- 태그 버튼 -->
                         <div class="Rmlist">
                             <select name="">
@@ -174,7 +184,7 @@
             </div>
             <div class="ModalFooter">
                 <p>모집 마감 : 2022. 09.08 목요일</p>
-                <button>해결하기</button>
+                <button>해결신청</button>
             </div>
         </div>
 

@@ -80,7 +80,8 @@ a {
     border: none;
     margin-right: 15px;
     border-radius: 5px;
-    background: rgb(235, 117, 48);
+    background: var(--btn-color);
+    color: white;
     cursor: pointer;
 }
 /* 관리자페이지 상단 오른쪽 등록버튼 */
@@ -89,7 +90,8 @@ a {
     border: none;
     margin-right: 15px;
     border-radius: 5px;
-    background: rgb(235, 117, 48);
+    background: var(--btn-color);
+    color: white;
     cursor: pointer;
 }
 
@@ -109,7 +111,8 @@ a {
     margin-left: 8px;
     margin-right: 10px;
     border-radius: 5px;
-    background: rgb(235, 117, 48);
+    background: var(--btn-color);
+    color: white;
     cursor: pointer;
 }
 .Figure, .Rep_Figure, .Ask_Figure {

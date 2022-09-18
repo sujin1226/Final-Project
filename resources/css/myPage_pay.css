@@ -12,6 +12,8 @@
     --ex-border-color: crimson;  /* 보드 테스트 레드 칼라 */
     --new-border-orange: solid 1px rgb(235, 117, 48);
     
+    --border-btn-radius: 5px;
+    --btn-color: rgba(255, 95, 47, 0.906);
 
 }
 
@@ -179,8 +181,10 @@
 }
 .dpListDate button {
     padding: 0 20px;
-    background: rgb(235, 117, 48);
+    background: var(--btn-color);
     border: none;
+    border-radius: var(--border-btn-radius);
+    color: white;
 }
 /* 내역 리스트 목록 */
 .dpListTitle {
